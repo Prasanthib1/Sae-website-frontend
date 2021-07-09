@@ -1,0 +1,26 @@
+.nav{
+  background: #101114;
+  width:100%;
+  height: 70px;
+  display: flex;
+  margin-top: 0px;
+}
+
+.bars{
+    margin-top: -10px;
+    color: #204095;
+    font-size: 24px;
+}
+
+.nav-icon {
+  margin-left: 90%;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar-wrap{
+    width:100%;
+}

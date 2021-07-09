@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+}
+.head {
+  margin-top: 70px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.head h1{
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.youtube {
+  align-items: center;
+}
+.vid {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin:20px auto 0 auto;
+}
+.hp_you{
+  font-size: 45px;
+}
+.hp_you:hover{
+  cursor:pointer
+}

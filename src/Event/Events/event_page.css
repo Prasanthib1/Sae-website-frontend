@@ -1,0 +1,38 @@
+.ep-title{
+   font-weight: 800;
+   color: #204095;
+   font-size: 45px;
+}
+.ep-about{
+    font-weight: 700;
+    color: hsl(224, 65%, 35%);
+    font-size: 3.5rem;
+    margin: 20px 39%;
+    border-bottom: 5px solid #204095;
+}
+@media only screen and (max-width:1218px){
+    .ep-about {margin: 20px 30%;}
+}
+
+.ep-desc{ 
+    font-size: 21px;
+    padding: 40px 25px;
+    
+    margin: 20px 7%;
+}
+
+.ep-info{
+    margin: 0% 35%;
+    padding: 10px 0 0;
+    border: #5e5e5e 2px solid;
+}
+.ep-date, .ep-moc, .ep-budget, .ep-participants{
+    text-align: left;
+    font-size: x-large;
+    border-bottom: 0.5px rgb(204, 204, 204) solid;
+
+}
+
+.ep-date b, .ep-moc b, .ep-budget b, .ep-participants b{
+    color: #90191b;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*MemberImage css*/
+.name > h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.role > h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  margin-top: 5px;
+}
+
+.member > .icon >img {
+  width: 150px;
+  height: 150px;
+  border-radius: 55%;
+  object-fit: contain;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+  padding: 15px 2px;
+  margin: 15px 3px 0 3px;
+  background-color: rgba(199, 198, 198, 0.603);
+  border-radius: 4%;
+  /*box-shadow: 0 0 5px 5px rgba(199, 198, 198, 0.603);*/
+}
+.insta {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mem_icon_outer{
+  background-color: #203e91;
+  height: 30px; width: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px 3px;
+}
+.mem_mail, .mem_lin {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mem_icon_outer:hover {
+  background-color: #5c6b92 !important;
+}
+
+
+/*Core main css*/
+.core {
+  /*height: 800px;*/
+  height: 475px;
+  margin:0 5%;
+}
+
+.core_members{
+  margin-top: 20px;
+}
+
+.core >.heading > h1{
+  font-family: 'Raleway', sans-serif;
+  color: #203e91;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  font-weight: bold;
+ /* margin-top: -80px;*/
+}
+
+.mem1, .mem2 {
+  display: flex;
+  flex-direction: row;
+  margin-top:30px;
+}
+
+
+@media only screen and (max-width: 996px){
+  .core {
+   height: 1000px;
+  }
+  .mem1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .mem2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    margin-top:10%;
+  }
+}

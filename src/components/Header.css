@@ -1,0 +1,151 @@
+.back-to-top{
+  position: fixed;
+  top:90vh;
+  margin-left:90vw;
+  font-size: 17px;
+  color: #0F4C81;;
+}
+.back-to-top:hover{cursor: pointer;}
+
+/*Header*/
+.header{
+  height: 132px;
+  width: 100%;
+}
+.header-top{
+  display: flex;
+  flex-direction: row;
+}
+.hp_icons{
+  right:0;
+}
+
+/*.header-image{
+  background-color: rgba(204, 203, 203, 0.5);
+  padding:0;
+  /*margin-top: -15px;
+  margin: -20px 0 0 0;
+}*/
+.header-video{
+  padding:0;
+  /*margin-top: -15px;*/
+  margin: 0px 0 0 0;
+}
+.h-navbar {
+  height:52.5px;
+  list-style-type: none;
+  margin: 0px 0 0 -1px;
+  padding: 0px 0 0px 0;
+  overflow: hidden;
+  background-color: #203e91;
+  width: 100%;
+}
+.page1, .page2, .page3, .page4, .page5, .page6{
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px 30px 0px 24px;
+}
+
+.header-text{
+  font-size: 13px;
+  font: 12px/1.5 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.15em;
+  color: white;
+}
+.header-text:hover{
+  color: #63676b;
+}
+
+li {
+  float:left;
+}
+.li1, .li2, .li3, .li4,.li5,.li6{
+  float: right;
+}
+/*dropdowns*/
+.project-dd, .club-dd {
+  display: none;
+  position: absolute;
+  background-color: #203e91;
+  margin: 20px 0px 0px 0px;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+.link-i{
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.li5, .li4 {
+  display: inline-block;
+}
+
+.link-i, .page4, .page5 {
+  display: inline-block;
+  color: black;
+  text-align: center;
+
+  text-decoration: none;
+  position: relative;
+}
+.link-i:hover {background-color: #3c6080;}
+
+.li5:hover .project-dd,
+.li4:hover .club-dd {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.page4, .page5{
+  padding: 2px 15px;
+}
+
+.link-i p{
+  color:white;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: small;
+}
+
+/*Icons*/
+.hp_icons{
+  display: inline;
+  margin: 20px 0% 0 68%;
+}
+.icon_hp_f, .icon_hp_yt,.icon_hp_li, .icon_hp_ins{
+  margin-left: 10px; 
+  color:white;
+  height: 30px; width:30px;
+  font-size: 4.5px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #90191b;
+}
+.icon_hp_f:hover, .icon_hp_ins:hover, .icon_hp_li:hover, .icon_hp_yt:hover{
+  background-color: #92393b;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width:728px){
+  .back-to-top{
+    margin-left: 80vw;
+  }
+  .h-navbar{
+    display: none;
+  }
+  .header-image{
+    display: inline;
+    position: absolute;
+  }
+  .side-menu{
+    display: inline;
+  }
+  .icon_hp_f, .icon_hp_li, .icon_hp_yt, .icon_hp_ins{
+    display: none;
+  }
+}

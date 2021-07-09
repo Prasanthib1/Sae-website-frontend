@@ -1,0 +1,113 @@
+  /*ClubMember CSS*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+  .clubMember >.name > h3 {
+    font-family:"Montserrat",sans-serif;
+    color: #0F4C81;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 7px;
+  }
+  
+  .clubMember >.role > h3 {
+    font-family:"Montserrat",sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  
+  .clubMember .icon{
+    position: relative;
+  }
+  .clubMember .icon img {
+    width: 150px;
+    height: 150px;
+    border-radius: 55%;
+    object-fit: contain;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .club_icons{
+    transition: .5s ease-in;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .icon:hover .club_img{
+    opacity: 0.4;
+  }
+  .icon:hover .club_icons{
+    opacity: 1;
+  }
+
+ .c_mail, .c_lin{
+   font-size: 37px;
+   padding-left:7px;
+   color: #0F4C81;
+ }
+ .c_mail:hover, .c_lin:hover{ cursor: pointer;}
+
+  .clubMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    object-fit: fill;
+    min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+/*Club CSS*/
+
+.club_head {
+  width:100%;
+}
+.club_head > h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: -20px;
+  color: #0F4C81;
+  text-align: center;
+  font-family: 'Poppins';
+}
+.club_alumni_head h1{
+  font-family: 'Poppins';
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+.club_members{
+  padding-top: 30px;
+}
+.alumni{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 40px;
+}
+.cm_row1, .cm_row2, .cm_row3, .cm_row4, .cm_row5{
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:728px){
+  .cm_row1, .cm_row2, .cm_row3, .cm_row4, .cm_row5{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }  
+}
