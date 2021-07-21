@@ -102,22 +102,11 @@
 
 .Search {
   width: 400px;
-  margin: 20px auto;
+  margin: 0px auto;
   position: relative;
   display: flex;
 }
 
-.SearchInput {
-  width: 85%;
-  border-top: 3px solid #204095;
-  outline: none;
-  margin-left: -2px;
-}
-.SearchInput::placeholder{
-  margin-top:6px;
-  font-size: 18px;
-}
-/********************/
 .search-box,.close-icon,.search-wrapper {
 	position: relative;
 	padding: 10px;
@@ -194,12 +183,10 @@
   }
   .heading_blog {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     padding: 30px;
-    margin-bottom: -20px;
     margin-top: -5px;
-    /*background-color: #132b3f;*/
     color: #204095;
   }
 
@@ -208,7 +195,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
-      margin:20px auto;
+      margin:20px 0px 0 20px;
     }
   } 
 
@@ -223,9 +210,13 @@
     }
   } 
   @media only screen and (max-width: 708px){
+    .blogmain{
+      margin: 0;
+    }
     .blog_info {
-      grid-template-columns: repeat(1, 1fr);
-      width: 98%;
+      grid-template-columns: 100%;
+      width: 100%;
+      margin: 0;
     }
     .blogs{
       width:96%;
@@ -234,6 +225,22 @@
     .blogs_img{
       width: 100%;
       height: auto;
+    }
+
+    .Search {
+      width: 100vw;
+      margin: 0px auto;
+      position: relative;
+      display: flex;
+      padding-left:8vw;
+    }
+    
+    .search-box{
+      width: 70vw;
+    }
+    .search-wrapper {
+      width: 100%;
+      margin: 0;
     }
   } 
  

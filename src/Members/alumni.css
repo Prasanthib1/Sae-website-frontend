@@ -8,15 +8,14 @@
     grid-template-columns: 30% 70%;
     width:80%;
     margin:30px 10% 0 10%;
-    box-shadow: 0 0 4px 4px #969393;
+    box-shadow: 0 0 4px 4px #bdbaba;
 }
 .alumni-heading p{
-    font-size: 70px;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 600;
     text-align: center;
-    
-
-    color: #0F4C81;
+    margin-top: 30px;
+    color: #203e91;
 }
 .alumni-image{
     padding-top: 40px;
@@ -26,9 +25,8 @@
     font-size:24px;
     color: #90191b;
 }
-.alumni-year{
-    font-size: 20px;
-}
+.alumni-year{ font-size: 20px;}
+.alumni-position{font-size: 18px; margin: -5px 0 10px 0;}
 .alumni-message{
     position: relative;
     
@@ -50,9 +48,8 @@
     display: flex;
     flex-direction: column;   
 }
-
-.alumni-in { font-size: 43px; margin: -3px 10px 0px 0px; color: #0F4C81}
-.alumni-in:hover{ cursor: pointer; color: #295377;}
+.alumni-in { font-size: 43px; margin: -4px 10px 0px 0px; color: #203e91}
+.alumni-in:hover{ cursor: pointer; color: #58678f;}
 .alumni-contact{
     float: right;
     margin: 20px 50px 20px auto;
@@ -74,10 +71,10 @@
     color: white;
 }
 
-@media screen and (max-width:900px)and(min-width:701px){
+@media screen and (max-width:900px){
     .alumni{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
     }
 }
     
@@ -89,4 +86,15 @@
     .alumni-contact-btn{
         margin: 20px auto;
     }
+    .alumni-name, .alumni-year,.alumni-position, .alumni-message{
+        text-align: center;
+    }
+    .alumni-in { margin: -5px 10px 0px 0px; }
+    .alumni-contact{
+     float: center;
+     margin: 20px auto 20px auto;
+}
+.alumni-contact-btn{
+    margin: 0px auto 20px auto;
+}
 }

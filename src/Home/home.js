@@ -8,7 +8,7 @@ import image5 from '../images/hp5.jpg';
 import * as AiIcons from 'react-icons/ai';
 
 const images = [image1, image2, image3, image4,image5];
-var delay = 3000;
+var delay = 8000;
 
 export default function Home() {
     const [index, setIndex] = React.useState(0);

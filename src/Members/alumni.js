@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './alumni.css';
 
-import img from '../images/profile.jpg';
 import * as AiIcons from 'react-icons/ai';
+import alumni_img1 from '../images/alumni/alumni_1.jpeg';
 import alumni_img2 from '../images/alumni/alumni_2.jpg';
 import alumni_img3 from '../images/alumni/alumni_3.jpg';
 import alumni_img4 from '../images/alumni/alumni_4.jpg';
@@ -11,16 +11,24 @@ import alumni_img6 from '../images/alumni/alumni_6.jpg';
 import alumni_img7 from '../images/alumni/alumni_7.jpg';
 import alumni_img8 from '../images/alumni/alumni_8.jpg';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import AOS from 'aos';
 
-const Alumni_mem=({img,name,year,email,message,lin}) => {
+const Alumni_mem=({img,name,year,position,email,message,lin}) => {
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
     return(
-        <div className="alumni">
+        <div className="alumni"  data-aos="fade-in" data-aos-once="true">
          <div className="alumni-image"><img 
           src={img} 
           width="200px"
-          height="auto"/></div>
+          height="auto"
+          alt=""/></div>
         <div className="alumni-info">
           <p className="alumni-name">{name}</p>
+          <p className="alumni-position">{position}</p>
           <p className="alumni-year">Batch of {year}</p>
           <p className="alumni-message">{message}</p>
           <div className="alumni-contact">
@@ -36,21 +44,30 @@ const Alumni_mem=({img,name,year,email,message,lin}) => {
 function Alumni(){
     return(
         <div className="alumni-main">
-            <div className="alumni-heading"><p>Alumni</p></div>
+            <div className="alumni-heading"  data-aos="fade-in" data-aos-once="true">
+              <p>Alumni</p>
+            </div>
             <Alumni_mem 
-              img={img}
+              img={alumni_img1}
               name="Rahul Madhogarhiya"
+              position=""
               year="2020"
               email="madhogarhiarahul@gmail.com"
-              message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-               it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               ulpa qui officia deserunt mollit anim id est laborum."
+              message="SAE-NITK has become one of the most happening and resourceful 
+              clubs in the past two years for automotive technologies and knowledge 
+              sharing. It spans across the different domains in automobile engineering,
+              including electric vehicles, hybrid systems, and self-driving cars.
+              The team has been growing every year with more passionate and 
+              dedicated members from all disciplines of engineering, making it a 
+              very engaging and fun organization to learn together. I had the 
+              privilege of leading this club with a team of wonderful people
+              during my final year, which gave me an experience worth remembering.
+              “Driven through passion” - that's what SAE and its members believe in."
               lin="https://www.linkedin.com/in/madhogarhiarahul/" />
             <Alumni_mem 
               img={alumni_img2}
               name="Pawan Pawar"
+              position="R&D Engineer, Advanced Defence Systems Navy(ADSN) at BEL"
               year="2020"
               email="pavanpawar1420@gmail.com"
               message="Being part of SAE NITK was second best that ever happened to me. Learnt lots of 
@@ -59,7 +76,8 @@ function Alumni(){
               lin="https://www.linkedin.com/in/ppawar07" />
             <Alumni_mem 
               img={alumni_img3}
-              name="Shaurya"
+              name="Shaurya Seth"
+              position="Upcoming MS Student @UCLA"
               year="2020"
               email="shaurya.seth480@gmail.com"
               message="Hi guys! I would like to share some things which I was fortunate enough to come 
@@ -78,6 +96,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img4}
               name="Rajat Shukla"
+              position="Research Intern at Indian Institute of Technology, Delhi"
               year="2021"
               email="rajatme58@gmail.com"
               message="I have witnessed SAE NITK grow by leaps and bounds and am glad to be a part of 
@@ -88,6 +107,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img5}
               name="Pradeep Kumar Modi"
+              position="Summer Intern at GARC Chennai"
               year="2021"
               email="pradeepkumar.171me152@nitk.edu.in"
               message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -98,9 +118,10 @@ function Alumni(){
                lin="https://www.linkedin.com/in/pradeep-kumar-modi-74ab25190/" />
             <Alumni_mem 
               img={alumni_img6}
-              name="Devendra"
+              name="Devendra Gharat"
+              position=""
               year="2021"
-              email="abc@gmail.com"
+              email=""
               message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -110,8 +131,9 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img7}
               name="Shripad Prakash Kelapure"
+              position=""
               year="2021"
-              email="Shripad.171me170@nitk.edu.in"
+              email="shripad.171me170@nitk.edu.in"
               message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -121,6 +143,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img8}
               name="Ninad Lamture"
+              position=""
               year="2021"
               email="ninadlamture27@gmail.com"
               message="Club is doing great work in terms of project, seminars, KEP and more. The current 

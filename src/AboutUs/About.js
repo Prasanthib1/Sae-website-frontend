@@ -13,11 +13,12 @@ function About() {
         <div className="about"  >
             <h1 data-aos="fade-in" data-aos-once="true">About Us</h1>
             <div className="about-text">
-             <p className="about-l1" data-aos="fade-right" data-aos-once="true">With 3 club divisions catering to Electrical Vehicles and Autonomous Systems, SAE-NITK has been 
+             <p className="about-l1" data-aos="fade-in" data-aos-once="true">With 3 club divisions catering to Electrical Vehicles and Autonomous Systems, SAE-NITK has been 
                  involved in all areas regarding Automobiles and Aerospace. We now want to spread our knowledge
                  to all learners regardless of their scientific temperament.
              </p>
-             <div className="quote-1"  data-aos="fade-in" data-aos-once="true">It is an endearing moment for the SAE-NITK club which has been exploring the
+             <div className="quote-1"  data-aos="fade-in" data-aos-once="true">
+              It is an endearing moment for the SAE-NITK club which has been exploring the
               very bright side of the technologies of the future and exhibits them to the institute throughout these
               years. This step of launching a magazine for the very first time is going
               to be first time is going to be a first for this club and NITK Surathkal.

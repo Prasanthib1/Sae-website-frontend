@@ -1,8 +1,6 @@
-.main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: rgb(218, 218, 218);
+.socials{
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 .head {
   margin-top: 70px;
@@ -21,14 +19,34 @@
   align-items: center;
 }
 .vid {
-  display: block;
-  height: 100px;
-  width: 100px;
-  margin:20px auto 0 auto;
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+  margin-bottom: -20%;
+}
+.react-player {
+  height:100px;
+  position: absolute;
+  top:0;
+  left:20%;
+  bottom: 0;
 }
 .hp_you{
   font-size: 45px;
 }
 .hp_you:hover{
   cursor:pointer
+}
+
+.fb-page{
+  margin: 30px 0 0 0;
+}
+
+@media only screen and (max-width:700px){
+  .socials{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .fb-page{
+    margin: 20px auto;
+  }
 }

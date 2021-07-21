@@ -1,5 +1,5 @@
-import React, { useState , Component} from "react";
-import * as BI from "react-icons/bi";
+import React, { useState , useEffect, Component} from "react";
+import * as Bi from "react-icons/bi";
 import blogs from './blogs.json'
 import './Blogsmain.css';
 import SearchBar from './search';
@@ -8,9 +8,9 @@ import AOS from 'aos';
 
 const Blogs=({image,title,desc,link,date, author})=>{
     return (
-        <div className="blogs">
+        <div className="blogs" data-aos="fade-up" data-aos-once="true">
           <div className="img-hover-blogs">
-           <img className="blogs_img" src={image}   height="220px" width="300px"></img>
+           <img className="blogs_img" src={image}   height="220px" width="300px" alt=""></img>
           <div className="hover-box-blogs">
             <p className="hover-desc-blogs">{desc}</p>
             <a href={link} className="blog-link-btn" style={{textDecoration: 'none'}} target="_blank">READ MORE</a>
@@ -20,7 +20,7 @@ const Blogs=({image,title,desc,link,date, author})=>{
             <div className="title_date">
              <h3>{title}</h3>
              <p>By {author}</p>
-             <p><BI.BiTimeFive style={{ fontSize:"12px" }}/> {date}</p>
+             <p><Bi.BiCalendar style={{ fontSize:"20px", paddingBottom:"4px" }}/> {date}</p>
             </div> 
               <p>&#9650;</p>
           </div>
@@ -30,6 +30,12 @@ const Blogs=({image,title,desc,link,date, author})=>{
 
 
 function App2(){
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
+
   const [data, setData] = useState(blogs);
 
   const searchData = (pattern) => {
@@ -69,7 +75,7 @@ function App2(){
        />
       <div className="blog_info">
         {data.map((item) => (
-          <Blogs {...item} key={item.title} />
+          <Blogs {...item} key={item.title}/>
         ))}
       </div>
     </div>

@@ -5,7 +5,7 @@ import './Event.css';
 import img1e from './images/Events/webinar-rspant.jpg'; import img2e from './images/Events/gate-webinar2.jpg';
 import img3e from './images/Events/gate-webinar.png';
 import mind_fiz from './images/Events/mind-fiz.jpg';
-import keynote from './images/Events/keynote2.jpg';
+import keynote from './images/Events/keynote.jpeg';
 import kasting from './images/Events/kasting.jpg';
 import otto from './images/Events/otto-quiz.jpg';
 import mat_sim from './images/Events/matlab-simulink.jpg';

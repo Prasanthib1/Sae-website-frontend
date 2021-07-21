@@ -1,28 +1,29 @@
   /*ClubMember CSS*/
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
   .clubMember >.name > h3 {
-    font-family:"Montserrat",sans-serif;
-    color: #0F4C81;
-    font-size: 18px;
-    font-weight: 800;
+    color: #203e91;
+    font-size: 2rem;
+    font-weight: 700;
     margin-top: 7px;
+    text-align: center;
   }
   
   .clubMember >.role > h3 {
-    font-family:"Montserrat",sans-serif;
     color: black;
-    font-weight: 600;
-    font-size: 15px;
-    margin-top: 8px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 5px;
+    text-align: center;
   }
   
   .clubMember .icon{
     position: relative;
   }
   .clubMember .icon img {
-    width: 150px;
-    height: 150px;
+    /*width: 150px;
+    height: 150px;*/
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 55%;
     object-fit: contain;
 
@@ -48,9 +49,9 @@
   }
 
  .c_mail, .c_lin{
-   font-size: 37px;
-   padding-left:7px;
-   color: #0F4C81;
+   font-size: 31px;
+   padding-left:1px;
+   color: #203e91;
  }
  .c_mail:hover, .c_lin:hover{ cursor: pointer;}
 
@@ -58,15 +59,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     object-fit: fill;
-    min-width: 200px;
-    min-height: 200px;
-    width: 100%;
-    padding-right: 2%;
-    padding-left: 2%;
-    margin-top: 20px;
-    justify-content: space-between;
+    /*width: 200px;
+    height: 200px;*/
+    height: auto;
+    width: 200px;
+    padding:0 2;
+    margin: 20px 0;
   }
 
 /*Club CSS*/
@@ -76,38 +75,29 @@
 }
 .club_head > h1 {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   padding: 30px;
   margin-bottom: -20px;
-  color: #0F4C81;
+  color: #203e91;
   text-align: center;
-  font-family: 'Poppins';
 }
 .club_alumni_head h1{
-  font-family: 'Poppins';
   font-size: 50px;
   text-align: center;
   margin-top: 20px;
 }
 .club_members{
-  padding-top: 30px;
-}
-.alumni{
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  margin-left: 15%;
-  margin-bottom: 40px;
-}
-.cm_row1, .cm_row2, .cm_row3, .cm_row4, .cm_row5{
-  display: flex;
-  flex-direction: row;
+  padding: 30px 0;
+  margin: 20px 2%;
+  box-shadow: 0 0 5px 5px rgb(207, 207, 207);
 }
 
-@media only screen and (max-width:728px){
-  .cm_row1, .cm_row2, .cm_row3, .cm_row4, .cm_row5{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }  
+.cm_row1, .cm_row2, .cm_row3, .cm_row4, .cm_row5{
+  display: flex;
+  place-items: center;
+  margin-top:20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  
 }
+

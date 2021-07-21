@@ -1,19 +1,20 @@
 import magazine from '../images/Events/magazine.jpeg';
+import website from '../images/Events/website.png';
 
 export const event_upcoming = [
     {
         "src": magazine,
         "title":"Magazine Release",
-        "text":"Some text (2-3 lines)",
-        "link":'/event9_21',
-        "type":"only sae"
+        "text":"Magazine for the academic year 2020-2021",
+        "link":'/event/magazine-release',
+        "type":"internal"
     },
     {
         
-        "src":"./images/Events/autocad.jpg",
+        "src":website,
         "title":"Website Release",
-        "text":"Some text (2-3 lines)",
-        "link":"/event10_21",
-        "type":"everyone"
+        "text":"Website of SAE NITK",
+        "link":"/event/website-release",
+        "type":"external"
     },
 ]

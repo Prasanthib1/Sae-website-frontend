@@ -6,10 +6,10 @@ import * as Fa from 'react-icons/fa';
 import img from '../images/profile.jpg';
 import img1 from '../images/K-Eshwar.jpg';
 import img2 from '../images/Ankit-Gupta.jpg';
+import img3 from '../images/Rishu.jpeg';
 import img4 from '../images/Diwakar-S-G.jpg';
 import img5 from '../images/Kaustubh-S.jpg';
 import AOS from 'aos';
-
 
 
 const MemberImage =({src,name,role,mail,lin}) => {
@@ -23,14 +23,14 @@ const MemberImage =({src,name,role,mail,lin}) => {
           <div className="icon" data-aos="fade-in" data-aos-once="true">
             <img src={src} />
           </div>
-          <div className="name" data-aos="fade-right" data-aos-once="true">
+          <div className="name" data-aos="fade-in" data-aos-once="true">
              <h3>{name}</h3>
           </div>
-          <div className="role" data-aos="fade-right" data-aos-once="true">
+          <div className="role" data-aos="fade-in" data-aos-once="true">
              <h3>{role}</h3>
           </div>
-          <div className="insta" data-aos="fade-in" data-aos-once="true">
-             <div className="mem_icon_outer"><Hi.HiMail className="mem_mail"  component="a" href={"mailto:"+ mail} /></div>
+          <div className="mem_icons" data-aos="fade-in" data-aos-once="true">
+             <div className="mem_icon_outer"><a href={"mailto:"+ mail}><Hi.HiMail className="mem_mail" /></a></div>
              <div className="mem_icon_outer"><Fa.FaLinkedinIn className="mem_lin" onClick={()=> window.open({lin}, "_blank")}/></div>
           </div>
       </div>
@@ -57,7 +57,7 @@ function Core() {
             mail="#"
             lin="#"/>
             <MemberImage
-            src={img}
+            src={img3}
             name="Rishu"
             role="Secretary"
             mail="#"
@@ -75,30 +75,7 @@ function Core() {
             mail="#"
             lin="#"/>
           </div>
-          {/*<div className="mem2">
-
-            <MemberImage
-            src={img5}
-            name="xxx"
-            role="xxx"
-            mail="#"
-            lin="#" />
-            <MemberImage
-            src={img6}
-            name="xxx"
-            role="xxx"
-            mail="#"
-            lin="#" />
-           <MemberImage
-            src={img7}
-            name="Rajat Shukla"
-            role="Convener"
-            mail="#"
-            lin="#"/>
-
-    </div>*/}
           </div>
-          
       </div>
     )
 }

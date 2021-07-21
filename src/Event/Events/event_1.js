@@ -6,30 +6,35 @@ import gate_webinar from './gate-webinar.png'
 import rspant from '../../images/Events/webinar-rspant.jpg';
 import matlab from '../../images/Events/matlab.jpeg';
 import simulink from '../../images/Events/simulink.jpeg';
-import solidworks from '../../images/Events/solidworks.jpeg';
+import solidworks from '../../images/Events/solidworks.png';
 import adobe from '../../images/Events/adobe.jpg';
 import cosmol from '../../images/Events/cosmol.png';
-import autocad from '../../images/Events/Autocad.jpg';
-import mind_fiz from '../../images/Events/mind-fiz.jpg';
-import keynote from '../../images/Events/keynote2.jpg';
-import kasting from '../../images/Events/kasting.jpg';
-import otto from '../../images/Events/otto-quiz.jpg';
-import mat_sim from '../../images/Events/matlab-simulink.jpg';
-import career from '../../images/Events/Career-building.jpg';
-import magazine from '../../images/Events/magazine.jpeg';
+import magazine from '../../images/Events/magazine2.jpeg';
 
 const EventTemplate=({title, img ,desc, date, speakers, platform, type}) => {
     return(
         <div className="event_page my-5">
             <h1 className="ep-title text-center col-12 my-5">{title}</h1>
-            <img className="ep-img text-center center-block mx-auto" width="600px" height="auto" src={img}/>
+            <img className="ep-img text-center center-block mx-auto" src={img}/>
             <div className="ep-about text-center">About the event</div>
-            <div className="ep-desc text-center my-5">{desc}</div>
+            <div className="ep-desc text-center">{desc}</div>
             <div className="ep-info">
-            <p className="ep-date text-center"><b>Date : </b>{date}</p>
-            <p className="ep-date text-center"><b>Speaker(s) : </b>{speakers}</p>
-            <p className="ep-date text-center"><b>Platform : </b>{platform}</p>
-            <p className="ep-date text-center"><b>Type of Event : </b>{type}</p>
+             <div className="ep-info-pt my-5">
+                 <div className="ep-info-h"><b>DATE</b></div>
+                 <div className="ep-info-i">{date}</div>
+              </div>
+              <div className="ep-info-pt my-5">
+                 <div className="ep-info-h"><b>SPEAKER(S)</b></div>
+                 <div className="ep-info-i">{speakers}</div>
+              </div>
+              <div className="ep-info-pt my-5">
+                 <div className="ep-info-h"><b>PLATFORM</b></div>
+                 <div className="ep-info-i">{platform}</div>
+              </div>
+              <div className="ep-info-pt my-5">
+                 <div className="ep-info-h"><b>TYPE</b></div>
+                 <div className="ep-info-i">{type}</div>
+              </div>
             </div>
         </div>
     )
@@ -64,11 +69,11 @@ function Event2_21(){
          The different sources to learn about the software were also explored. In the second phase basic 
          coding, the GUI and the different built-in apps in Matlab were covered.  The events was open to 
          members of the club."
-         date="October 23, 2020 (Phase 1)
-         October 24, 2020 (Phase 2)"
+         date="&emsp; &emsp; October 23, 2020 (Phase 1) &emsp; &emsp; 
+         &emsp; &emsp;October 24, 2020 (Phase 2)"
          speakers="Diwakar S Goud"
          platform="MS Teams"
-         type="Only members of sae" />
+         type="Internal" />
     </div>
     )
 }
@@ -84,11 +89,11 @@ function Event3_21(){
          The second phase dealt with certain advanced features and functionalities. PID controller and various tuning methods were discussed. The participants were introduced to various features of transfer functions of first and second order. Visualisation of graphs and optimization were also included in the KEP. 
          The event was open to the members of the club.         
          "
-         date="December 18, 2020 (Phase 1)
-         January 17, 2021 (Phase 2)"
+         date="&emsp; December 18, 2020 (Phase 1) &emsp; 
+         &emsp;  January 17, 2021 (Phase 2)"
          speakers="Rishu Kumar, Ankit Gupta"
          platform="MS Teams"
-         type="Only members of sae"  />
+         type="Internal"  />
     </div>
     )
 }
@@ -103,11 +108,11 @@ function Event4_21(){
          The basics of 3D modelling such as extrusion, loft, sweep etc was dealt with. Edit features like trim, fillet, chamfer, etc., were discussed. Modelling problems associated with the conversion of orthographic views to isometric views and vice-versa were also covered. Multi-section solid, helix spring and weldments were briefed. 
          The event was open to the members of the club.                 
          "
-         date="January 21, 2021 (Phase 1)
-         January 23, 2021 (Phase 2)"
+         date="&emsp; &emsp; January 21, 2021 (Phase 1), &emsp; &emsp;
+         &emsp; &emsp; January 23, 2021 (Phase 2)"
          speakers="Eshwar Sai Srinivas"
          platform="MS Teams"
-         type="Only members of sae" />
+         type="Internal" />
     </div>
     )
 }
@@ -124,7 +129,7 @@ function Event5_21(){
          date="February 06, 2021"
          speakers="Islavath Manohar"
          platform="MS Teams"
-         type="Only members of sae" />
+         type="Internal" />
     </div>
     )
 }
@@ -140,7 +145,7 @@ function Event6_21(){
          date="February 28, 2021"
          speakers="Rajat Shukla"
          platform="Google Meet"
-         type="All the students of NITK" />
+         type="External" />
     </div>
     )
 }
@@ -160,11 +165,11 @@ function Event7_21(){
          The second phase was mainly focused on industrial internships. Kaustubh Sonawane and Eshwar Sai Srinivas spoke about bagging internships in the core domain from campus. Nisarg Shah and Karan Jain provided insights about earning internship opportunities in the non-core domains. Finally, Pradeep Kumar Modi spoke about off campus core internships in companies such as IOCL, SAIL, GARC, etc.,.
          All the speakers were very happy to answer the doubts and questions of the other participants. The event was open to all the students of NITK.                                    
          "
-         date="March 13, 2021 (Phase 1)
-         March 14, 2021 (Phase 2)"
+         date=" &emsp;March 13, 2021 (Phase 1),&emsp; &emsp; 
+         &emsp; &emsp;&emsp; March 14, 2021 (Phase 2)"
          speakers="Rajat Shukla, Rishu Kumar, Ankit Gupta, Sagar, Shuvam Senapati, Kaustubh Sonawane, Eshwar Sai Srinivas and Pradeep Kumar Modi"
          platform="MS Teams"
-         type="All the students of NITK" />
+         type="External" />
     </div>
     )
 }
@@ -183,7 +188,7 @@ function Event8_21(){
          date="May 09, 2021"
          speakers="Abhisheka Shetty and Bharath Desikan"
          platform="MS Teams"
-         type="Open to everyone"
+         type="External"
          />
     </div>
     )
@@ -223,130 +228,7 @@ function Event10_21(){
     </div>
     )
 }
-/****************** */
 
-function Event1_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="AutoCAD Workshop"
-         img={autocad}
-         desc="The workshop aimed at covering the basics of 2D and 3D design and modeling of automobile components using the AutoCAD software. It was a hands-on session where the attendees had to follow the instructions given by the speaker, Mr. Sachin Kuchekar, third-year Mechanical Engineering, and implement them on their own system. The event spanned for around 2 hours, starting with the basics of the software such as 2D design using different tools followed by the 3D modeling of a crankshaft.
-         "
-         date=" "
-         speakers="Mr. Sachin Kuchekar"
-         platform="In-person on the campus"
-         type="All the students of NITK" />
-    </div>
-    )
-}
-
-function Event2_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="The Mind Fiz"
-         img={mind_fiz}
-         desc="It was a 24-hour online event, the problem statement for which was circulated to the registered Participation and they were required to submit their CAD files having the full assembly of a CV Axle. It was conducted after the AutoCAD Workshop conducted by SAE-NITK to help the attendees practice the knowledge gained in the workshop."
-         date=" "
-         speakers=" - "
-         platform="In-person on the campus"
-         type="All the students of NITK" />
-    </div>
-    )
-}
-
-function Event3_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="Kasting"
-         img={kasting}
-         desc="SAE-NITK in collaboration with MetaMorph, Metallurgy Committee as part of our technical fest, Engineer’19, conducted a presentation on the crankshaft part of automobiles, in addition to the process of building a sand mold and the explanation of various tools used for it. Furthermore, the presentation was followed by a demonstration of the casting process of the crankshaft using Aluminium metal. The event was an hour-long including the presentation and the casting demo."
-         date=" "
-         speakers=" "
-         platform="In-person on the campus"
-         participants="All the students of NITK" 
-         />
-    </div>
-    )
-}
-
-function Event4_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="MATLAB & Simulink Workshop"
-         img={mat_sim}
-         desc="The workshop was spanned across two days and was mainly focussed on covering the basics of
-        MATLAB such as Scalar, Vector and Matrix operations, strings and plotting and on day 1 followed
-        Functions, Cell Arrays and Mathematical Optimisation using Gauss-Seidel and other methods on 
-        day 2. It was a hands-on session wherein the attendees had to execute the instructions given by 
-        the speaker, Mr. Pradeep Modi, third-year Mechanical Engineering on their system and practice
-        accordingly. Each session lasted for two to three hours depending on the topics covered and
-        Q&As from the audience. The workshop received very positive feedback from the audience."
-
-         date="October 23, 2019"
-         speakers="Mr. Pradeep Modi"
-         platform="In-person on the campus"
-         participants="All the students of NITK"
-         />
-        </div>
-    )
-}
-
-function Event5_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="Otto Quiz"
-         img={otto}
-         desc="Otto quiz was a competition based on automobiles for the first-year students. The event was
-        hosted by the second year Mechanical Engineering students Mr. Anish Dua and Mr. Diwakar Goud. The 
-        quiz had only one round, consisting of non-factual questions asked in a jovial manner so as to make
-        a recreational ambiance for the new admissions. The quiz spanned out for an hour. The candidates
-        gave their best, however, only one was felicitated."
-         date=" "
-         moc="In-person on the campus"
-         speakers="-"
-         type="Open to everyone" />
-    </div>
-    )
-}
-
-function Event6_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="Keynote Talk Series"
-         img={keynote}
-         desc="The Keynote Talk series spanned from 28th to 30th January. The event was in collaboration 
-         with SAEINDIA. The inaugural ceremony of the event  was presided over by Dr. Jagannath Nayak (DSW) and Prof. Ananthanarayana V.S. (Deputy Director), MCed by Mr. Shaurya Seth (President of SAE-NITK). Furthermore, the crowd witnessed the launch of SAE magazine Techbuzz, with the inauguration by the dignitaries present on the dias.
-         The event consisted of talks on Autonomous Vehicles on day 1 by three of the speakers from Robert Bosch Engineering namely Mr. Prakash Verma, Mr. Sreeram S., and Ms. Devayani Kulkarni. It was a 3hrs long session on the first day. Day 2 consisted of a talk by Mr. Devaraj Tuppad from Vitesco Technologies on Hybrid and Electric Vehicles. The talk was for 3hrs and described the existing technology in the field and their future prospects. The talk on the last day of the event was by Mr. Neelakandan Chandrasekaran from 3M India Ltd. on the topic, Smart Materials followed by question answers from the audience. The closing ceremony consisted of a few words from our faculty advisor Prof. Poornesh Kumar and Mr. Shaurya Seth, followed by a group photo.
-         "
-         date=" "
-         speakers="Mr.Prakash Verma, Mr.Sreeram S., Ms. Devayana Kulkarni, Mr. Devaraj Tuppad and Mr. Neelankantan Chandrasekaran"
-         platform="In-person on the campus"
-         type="All the students of NITK"
-          />
-    </div>
-    )
-}
-
-function Event7_20(){
-    return(
-    <div>
-        <EventTemplate 
-         title="Career Building KEP"
-         img={career}
-         desc="The event was a knowledge exchange program by, Mr. Rahul Madhograhia (Convenor SAE-NITK 2019-20), and Mr. Dhruv Thakkar (Final year, Mechanical Engineering Dept). The KEP started with Mr. Rahul addressing the crowd with the help of a PowerPoint presentation on CV/Resume building tips, a brief about the letter of recommendations about what they are and how to procure them followed by delivery of internship opportunities rolled out by various companies and institutes across India and abroad. It even consisted of assisting club members to build a rough draft of their CVs on LaTex. Finally, the KEP concluded by Mr. Dhruv addressing the crowd and sharing his past experiences on the points mentioned above for better clarity on things and process intricacies involved."
-         date=" "
-         speakers="Mr. Rahul Madhograhia and Mr. Dhruv Thakkar"
-         platform="In-person on the campus"
-         type="Only members of the club " />
-    </div>
-    )
-}
 
 export {
     EventTemplate,
@@ -360,12 +242,5 @@ export {
     Event8_21,
     Event9_21,
     Event10_21,
-    Event1_20,
-    Event2_20,
-    Event3_20,
-    Event4_20,
-    Event5_20,
-    Event6_20,
-    Event7_20,
   }
 

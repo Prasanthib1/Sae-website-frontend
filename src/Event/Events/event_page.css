@@ -4,35 +4,88 @@
    font-size: 45px;
 }
 .ep-about{
-    font-weight: 700;
-    color: hsl(224, 65%, 35%);
+    /*font-weight: 700;
+    color: #204095;
     font-size: 3.5rem;
-    margin: 20px 39%;
-    border-bottom: 5px solid #204095;
+    margin: 70px 39% 0px 39%;
+    border-bottom: 5px solid #204095;*/
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: white;
+    background-color: #90191b;
+    font-size: 3.3rem;
+    width: 30%;
+    margin: 70px auto 0 auto;
+    z-index: 1;
 }
-@media only screen and (max-width:1218px){
-    .ep-about {margin: 20px 30%;}
+@media only screen and (max-width:896px){
+    .ep-about{ width: 60%; }
+}
+
+.ep-img{
+    width:60%;
+    height:auto;
+}
+@media only screen and (max-width:700px){
+    .ep-img {width:90%}
 }
 
 .ep-desc{ 
+    position: relative;
     font-size: 21px;
     padding: 40px 25px;
     
-    margin: 20px 7%;
+    margin: -20px 7% 40px 7%;
+    background-color: rgb(245, 245, 245);
+    z-index: 0;
 }
 
 .ep-info{
-    margin: 0% 35%;
-    padding: 10px 0 0;
-    border: #5e5e5e 2px solid;
+    max-width: 500px;  
+    margin: 0 auto;
 }
-.ep-date, .ep-moc, .ep-budget, .ep-participants{
-    text-align: left;
-    font-size: x-large;
-    border-bottom: 0.5px rgb(204, 204, 204) solid;
-
+.ep-info-pt{
+    min-width: 100px;
+    margin: 0 auto;
 }
 
-.ep-date b, .ep-moc b, .ep-budget b, .ep-participants b{
-    color: #90191b;
+.ep-info-h{
+    
+    position: relative;
+    color: white;
+    background-color: #90191b;
+    text-align: center;
+    font-size: 14px;
+    max-width: 120px;
+    padding: 3px;
+    
+    letter-spacing: 0.25rem;
+    z-index: 1;
+}
+
+
+.ep-info-i{
+    position: relative;
+    color: #204095;
+    text-align: center;
+    font-size: 18px;
+    min-height: 50px;
+    max-width: 400px;
+    margin: -15px 0 0 50px;
+    padding: 15px 0 4px 0;
+    
+    letter-spacing: 0.15rem;
+    box-shadow: 0 0 3px 3px rgb(224, 223, 223);
+    z-index: 0;
+}
+
+@media only screen and (max-width:700px){
+    .ep-info-pt {width:90%}
+    .ep-info-h{
+       margin: 0 auto;
+    }
+    .ep-info-i{
+        margin: -10px auto 0 auto;
+     }
 }

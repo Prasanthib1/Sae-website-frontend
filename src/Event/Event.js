@@ -1,43 +1,64 @@
-import React,{ Component, useState} from "react";
+import React,{ Component, useEffect} from "react";
 import {Router, Switch, Link, BrowserRouter} from "react-router-dom";
 import './Event.css';
 import {event_20} from './event_20';
 import {event_21} from './event_21';
 import {event_upcoming} from './event_upcoming';
+import AOS from 'aos';
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
 
 //Item for carousel
 const Itemc=({src,title,text,link})=>{
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
     return(
-        <div style={{ width: '32rem' }} className="event-1">
+        <div style={{ width: '32rem' }} className="event-1" data-aos="fade-up" data-aos-once="true">
             <div className="card-body">
           <img variant="top"
                src={src}
                height="200px"
                width="100%"/>
-        <div className="card-info">
+        <div className="card-info" data-aos="fade-in" data-aos-once="true">
         <h3 className="card-title">{title}</h3>
         <p className="card-text">{text}</p>
         </div>
         </div>
-        <Link to={link} ><button className="card-button1">Read more</button></Link>
+        <Link to={link} ><button className="card-button1" onClick={scrollToTop}>
+          Read more</button></Link>
         <button className="card-button2">REGISTER NOW</button>
         </div>
     )
   }
   const Item=({src,title,text,link})=>{
+    useEffect(() => {
+      AOS.init({
+        duration : 2000
+      });
+    }, []);
       return(
-          <div style={{ width: '32rem' }} className="event-2">
+          <div style={{ width: '32rem' }} className="event-2" data-aos="fade-up" data-aos-once="true">
           <div className="card-body">
             <img variant="top"
                  src={src}
                  height="200px"
                  width="100%"/>
-          <div className="card-info">
+          <div className="card-info" data-aos="fade-in" data-aos-once="true">
           <h3 className="card-title">{title}</h3>
           <p className="card-text">{text}</p>
           </div>
           </div>
-          <Link to ={link} ><button className="card-button1">Read more</button></Link>
+          <Link to ={link} ><button className="card-button1" onClick={scrollToTop}>
+            Read more
+            </button></Link>
           </div>
       )
     }
@@ -67,21 +88,21 @@ class EventMain extends React.Component{
       if (this.state.value === 'none')
       return(
         <div className="events">
-          <div className="up-events-heading"> <h3>Upcoming :</h3> </div>
           <div className="up-events">
             {event_upcoming.map(item => (
-            <Itemc 
-             src={item.src}
-             title={item.title}
-             text={item.text}
-             link={item.link} /> ))};
+            <Item {... item} /> ))};
            </div>
-          <div className="pre-events-heading"> <h3>Previous :</h3> </div>
-         <p className="event-year">2020-2021:</p>
+          <div className="pre-events-heading" data-aos="fade-in" data-aos-once="true"> 
+           <h3>Archives</h3> </div>
+         <p className="event-year" data-aos="fade-in" data-aos-once="true">
+           2020-2021
+         </p>
          <div className="previous-events"> 
            {event_21.map(item => (<Item {... item} />))};
           </div>
-         <p className="event-year">2019-2020:</p>
+         <p className="event-year" data-aos="fade-in" data-aos-once="true">
+           2019-2020
+         </p>
          <div className="previous-events">
          {event_20.map(item => (<Item {... item} /> ))};
           </div> 
@@ -90,16 +111,21 @@ class EventMain extends React.Component{
       else return(
         <div >
           <div className="events">
-          <div className="up-events-heading"> <h3>Upcoming :</h3> </div>
           <div className="up-events">
-            {event_upcoming.filter(items => items.type === this.state.value).map(item => (<Itemc {... item} /> ))}; 
+            {event_upcoming.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))}; 
            </div>
-          <div className="pre-events-heading"> <h3>Previous :</h3> </div>
-         <p className="event-year">2020-2021:</p>
+          <div className="pre-events-heading" data-aos="fade-in" data-aos-once="true"> 
+            <h3>Archives</h3> 
+          </div>
+         <p className="event-year" data-aos="fade-in" data-aos-once="true">
+           2020-2021
+         </p>
          <div className="previous-events"> 
            {event_21.filter(items => items.type === this.state.value).map(item => (<Item {... item} />))}; 
           </div>
-         <p className="event-year">2019-2020:</p>
+         <p className="event-year" data-aos="fade-in" data-aos-once="true">
+           2019-2020
+         </p>
          <div className="previous-events">
          {event_20.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))};
           </div> 
@@ -109,18 +135,21 @@ class EventMain extends React.Component{
     render(){
         return(
             <div className="search"> 
-                <div className="events-heading">
+                <div className="events-heading" data-aos="fade-in" data-aos-once="true">
                   <h2>Events</h2>
                 </div>
-                
+              <div className="events-type" style={{ marginLeft: "15px" }}>
+                <span  className="event-dropdown-text">Type : </span> 
                 <select id="type" onChange={this.handleChange} value={this.state.value} class="event-dropdown">
-                    <option value="none">None</option>
-                    <option value="only sae">only sae</option>
-                    <option value="everyone" >everyone</option>
+                    <option value="none" className="event-type">None</option>
+                    <option value="internal" className="event-type">Internal</option>
+                    <option value="external" className="event-type">Extrnal</option>
                 </select>
-                <span  className="event-dropdown-text">Type : </span>   
-                   {this.renderElement()};
-                </div>
+              </div>
+              <div>  
+                  {this.renderElement()};
+              </div>    
+            </div>
 
         );
     };

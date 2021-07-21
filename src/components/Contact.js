@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Contact.css';
-import * as AiIcons from 'react-icons/ai';
+import * as Fa from 'react-icons/fa';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
@@ -12,6 +12,8 @@ const scrollToTop = () => {
     behavior: "smooth"
   });
 };
+
+
 
   export default function Contact() {
     return (
@@ -24,7 +26,7 @@ const scrollToTop = () => {
               <div className="c1_info">
                 <ul className="list-unstyled">
                   <li> SAE NITK </li>
-                  <li><CallIcon /> +91 8618891003</li>
+                  {/*<li><CallIcon /> +91 8618891003</li>*/}
                   <li><EmailIcon /> saeindia@nitk.edu.in</li>
                   <li><LocationOnIcon />National Institute of
                   Technology Karnataka,
@@ -54,15 +56,23 @@ const scrollToTop = () => {
             <div className="column3">
              <h2>Follow Us</h2>
              <div className="c3_icon">
-              <AiIcons.AiFillLinkedin className="icon_c_li"  onClick={()=> window.open("https://www.linkedin.com/company/saenitk/?originalSubdomain=in", "_blank")}/>
-              <AiIcons.AiFillInstagram className="icon_c_inst" onClick={()=> window.open("https://www.instagram.com/sae_nitk/?hl=en", "_blank")} />
-              <AiIcons.AiFillYoutube className="icon_c_yt" onClick={()=> window.open("https://www.youtube.com/channel/UCPiCkG64oF7KKec7tEhquyw", "_blank")}/>
-              <AiIcons.AiFillFacebook  className="icon_c_fb" onClick={()=> window.open("https://www.facebook.com/saenitk/", "_blank")} />
+               <div className="icon_contact_outer">
+                 <Fa.FaLinkedinIn className="icon_contact"  onClick={()=> window.open("https://www.linkedin.com/company/saenitk/?originalSubdomain=in", "_blank")}/>
+               </div>
+               <div className="icon_contact_outer">
+                <Fa.FaInstagram className="icon_contact" onClick={()=> window.open("https://www.instagram.com/sae_nitk/?hl=en", "_blank")} />
+               </div>
+               <div className="icon_contact_outer">
+                <Fa.FaYoutube className="icon_contact" onClick={()=> window.open("https://www.youtube.com/channel/UCPiCkG64oF7KKec7tEhquyw", "_blank")}/>
+               </div>
+               <div className="icon_contact_outer">
+                <Fa.FaFacebookF  className="icon_contact" onClick={()=> window.open("https://www.facebook.com/saenitk/", "_blank")} />
+               </div>     
              </div>
             </div>
           </div>
           <div className="copyright">
-            <p>&copy; Website designed by Prasanthi, Wilson, Shashiprakash</p>
+            <p>&copy; Website designed and developed by Prasanthi, Wilson, Shashiprakash</p>
           </div>
        </div>
     </footer>

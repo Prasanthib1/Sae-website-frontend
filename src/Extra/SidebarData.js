@@ -9,77 +9,70 @@ export const SidebarData = [
     title: 'Home',
     path: '/',
     icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subnavbool: false
+  },
+  {
+    title: 'About Us',
+    path: '/about',
+    icon: <IoIcons.IoIosPaper />,
+    subnavbool: false
   },
   {
     title: 'Blog',
     path: '/blog',
     icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subnavbool: false
   },
   {
     title: 'Members',
     path: '#',
-    icon: <IoIcons.IoIosPaper />,
+    icon: <IoIcons.IoMdPeople />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-
+    subnavbool: true,
     subNav: [
       {
         title: 'Current Team',
         path: '/club',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoMdPeople />,
         cName: 'sub-nav'
       },
       {
         title: 'Alumni',
         path: '/alumni',
+        icon: <IoIcons.IoMdPeople />,
+        cName: 'sub-nav'
+      }
+    ]
+  },
+  {
+    title: 'PROJECTS',
+    path: '#',
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subnavbool: true,
+
+    subNav: [
+      {
+        title: '2019-2020',
+        path: '/project1',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
-        title: 'Reports 3',
-        path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        title: '2020-2021',
+        path: '/project2',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       }
     ]
   },
+  
   {
-    title: 'Products',
-    path: '/products',
-    icon: <FaIcons.FaCartPlus />
+    title: 'Events',
+    path: '/event',
+    icon: <IoIcons.IoIosPaper />,
+    subnavbool: false
   },
-  {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />
-  },
-  {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
-
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: 'Message 1',
-        path: '/messages/message1',
-        icon: <IoIcons.IoIosPaper />
-      },
-      {
-        title: 'Message 2',
-        path: '/messages/message2',
-        icon: <IoIcons.IoIosPaper />
-      }
-    ]
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
-  }
 ];

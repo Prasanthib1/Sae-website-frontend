@@ -2,9 +2,7 @@
 
 .about {
   height: auto;
-  /*background-color: #fffaf5;*/
   background-size: cover;
-  margin-bottom:-10vh ;
   background-color: white;
 }
 .about h1 {
@@ -84,11 +82,11 @@
 
 @media only screen and (max-width:700px){
   .about-text{
-    margin: 5% 5% auto 5%;
+    margin: 5% 3% auto 3%;
   }
 
   .quote-1, .quote-2{
-    padding:1.2em 15px 1.2em 45px;
+    padding:1.2em 10px 1.2em 45px;
     border-left:5px solid #90191b ;
   }
 }

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { Pause } from "@material-ui/icons";
+import { grey } from "@material-ui/core/colors";
 
 const TextScroller = ({ text1, text2, path1, path2 }) => {
   const [key, setKey] = useState(1);
@@ -15,6 +16,7 @@ const TextScroller = ({ text1, text2, path1, path2 }) => {
     onRest: () => {
       setKey(key + 1);
     },
+    
   });
 
   return (
