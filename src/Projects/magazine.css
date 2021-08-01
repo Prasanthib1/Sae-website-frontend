@@ -13,8 +13,11 @@
 }
 
 @media only screen and (max-width:800px) {
+    iframe{
+        height: 500px;
+    }
     .magazine-section{
-        margin: 50px 1%;
-        width:99%;
+        margin: 50px 2.5%;
+        width:95%;
     }
     }

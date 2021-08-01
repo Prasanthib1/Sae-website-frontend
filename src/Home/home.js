@@ -8,7 +8,7 @@ import image5 from '../images/hp5.jpg';
 import * as AiIcons from 'react-icons/ai';
 
 const images = [image1, image2, image3, image4,image5];
-var delay = 8000;
+var delay = 4000;
 
 export default function Home() {
     const [index, setIndex] = React.useState(0);
@@ -66,12 +66,6 @@ export default function Home() {
       <div className="register-event">
       <button>Register for abc</button>
       </div>
-      {/*<div className="hp_icons">
-        <AiIcons.AiFillFacebook className="icon_hp_f" onClick={()=> window.open("https://www.facebook.com/saenitk/", "_blank")}/>
-        <AiIcons.AiFillYoutube className="icon_hp_yt"  onClick={()=> window.open("https://www.youtube.com/channel/UCPiCkG64oF7KKec7tEhquyw", "_blank")}/>
-        <AiIcons.AiFillLinkedin className="icon_hp_li"  onClick={()=> window.open("https://www.linkedin.com/company/saenitk/?originalSubdomain=in", "_blank")}/>
-        <AiIcons.AiFillInstagram className="icon_hp_ins" onClick={()=> window.open("https://www.instagram.com/sae_nitk/?hl=en", "_blank")}/>
-          </div>*/}
-      </div>
+    </div>
   );
 }

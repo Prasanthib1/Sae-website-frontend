@@ -23,8 +23,8 @@
 
 .column1 h2, .column2 h2, .column3 h2{
   font-size: 19px;
-  font-weight: 900;
-  letter-spacing: 0.20rem;
+  font-weight: 700;
+  letter-spacing: 0.10rem;
   color: white;
   margin-bottom: 17px;
 }
@@ -39,7 +39,7 @@ li {
 .column1 p{
   margin-top: 5px;
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
 }
 .c1_info{ width:100%; }
 .c1_info ul{

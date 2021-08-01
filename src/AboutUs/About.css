@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 .about {
+  font-family: 'Montserrat', sans-serif;
   height: auto;
   background-size: cover;
   background-color: white;
 }
 .about h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   font-weight: 750;
-  font-family: 'Raleway', sans-serif;
+
   color: #203e91;
   background-color: white;
 
@@ -17,22 +17,20 @@
   margin: 0% 10% -20px 10%;
 }
 .about-text{
+  font-family: 'Montserrat', sans-serif;
   padding: 5% 30px 0 30px ;
   margin: 0% 10% auto 10%;
   background-color: white;
 }
 .about-l1{
-  /*font-family: 'Poppins';*/
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 1.8rem;
 }
 
-
 /*quote-1, quote-2*/
 .quote-1, .quote-2{
-  /*font-family:'Poppins';*/
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style:normal;
   font-size: 1.4em;
@@ -49,7 +47,6 @@
 }
 
 .quote-1::before, .quote-2::before{
-  font-family: 'Raleway', sans-serif;
   content: "\201C";
   color:#90191b;
   font-size:4em;
@@ -71,7 +68,7 @@
 }
 
 .quote1-i, .quote2-i{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin-top: 5px;
   text-align: right;

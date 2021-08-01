@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import './Youtube.css';
 import * as AiIcons from 'react-icons/ai';
-import ReactPlayer from 'react-player';
 import AOS from 'aos';
 
 //https://youtu.be/_nBlN9yp9R8
@@ -19,16 +18,18 @@ export default function Youtube() {
               <h1>Youtube Channel</h1>
               <p>Visit Our Channel <AiIcons.AiOutlineArrowRight/> <AiIcons.AiFillYoutube className="hp_you" onClick={()=> window.open("https://www.youtube.com/channel/UCPiCkG64oF7KKec7tEhquyw", "_blank")}/></p>
             </div>
-            <div className="vid" data-aos="fade-in" data-aos-once="true">
-              <ReactPlayer className="react-player"
-                controls
-                height= '60%'
-                width='60%'
-                margin-left='45%'
-                url='https://www.youtube.com/watch?v=TFW0CMEWVqI&t=1238s' />
-              </div>
-            </div>
-            <div class="fb-page" 
+            <div className="video-responsive" data-aos="fade-in" data-aos-once="true">
+              <iframe 
+              width="684" 
+              height="385" 
+              src="https://www.youtube.com/embed/TFW0CMEWVqI" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </div>
+  </div>
+            {/*<div class="fb-page" 
                 data-href="https://www.facebook.com/saenitk/?ref=page_internal" 
                 data-tabs="timeline" 
                 data-width="300px" 
@@ -40,7 +41,7 @@ export default function Youtube() {
                   <blockquote cite="https://www.facebook.com/saenitk/?ref=page_internal" class="fb-xfbml-parse-ignore">
                     <a href="https://www.facebook.com/saenitk/?ref=page_internal">SAE NITK</a>
                   </blockquote>
-            </div>
+    </div>*/}
           </div>
     )
 }

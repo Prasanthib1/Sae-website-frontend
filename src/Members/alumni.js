@@ -7,13 +7,13 @@ import alumni_img2 from '../images/alumni/alumni_2.jpg';
 import alumni_img3 from '../images/alumni/alumni_3.jpg';
 import alumni_img4 from '../images/alumni/alumni_4.jpg';
 import alumni_img5 from '../images/alumni/alumni_5.jpg';
-import alumni_img6 from '../images/alumni/alumni_6.jpg';
+import alumni_img6 from '../images/alumni/alumni_6_.jpeg';
 import alumni_img7 from '../images/alumni/alumni_7.jpg';
 import alumni_img8 from '../images/alumni/alumni_8.jpg';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import AOS from 'aos';
 
-const Alumni_mem=({img,name,year,position,email,message,lin}) => {
+const Alumni_mem=({img,name,year,role,email,message,lin}) => {
   useEffect(() => {
     AOS.init({
       duration : 2000
@@ -28,7 +28,7 @@ const Alumni_mem=({img,name,year,position,email,message,lin}) => {
           alt=""/></div>
         <div className="alumni-info">
           <p className="alumni-name">{name}</p>
-          <p className="alumni-position">{position}</p>
+          <p className="alumni-role">{role}</p>
           <p className="alumni-year">Batch of {year}</p>
           <p className="alumni-message">{message}</p>
           <div className="alumni-contact">
@@ -50,7 +50,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img1}
               name="Rahul Madhogarhiya"
-              position=""
+              role="MS Student at University of Maryland"
               year="2020"
               email="madhogarhiarahul@gmail.com"
               message="SAE-NITK has become one of the most happening and resourceful 
@@ -67,7 +67,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img2}
               name="Pawan Pawar"
-              position="R&D Engineer, Advanced Defence Systems Navy(ADSN) at BEL"
+              role="R&D Engineer, Advanced Defence Systems Navy(ADSN) at BEL"
               year="2020"
               email="pavanpawar1420@gmail.com"
               message="Being part of SAE NITK was second best that ever happened to me. Learnt lots of 
@@ -77,7 +77,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img3}
               name="Shaurya Seth"
-              position="Upcoming MS Student @UCLA"
+              role="Upcoming MS Student @UCLA"
               year="2020"
               email="shaurya.seth480@gmail.com"
               message="Hi guys! I would like to share some things which I was fortunate enough to come 
@@ -96,7 +96,7 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img4}
               name="Rajat Shukla"
-              position="Research Intern at Indian Institute of Technology, Delhi"
+              role="GET at Dr. Reddy's Laboratories"
               year="2021"
               email="rajatme58@gmail.com"
               message="I have witnessed SAE NITK grow by leaps and bounds and am glad to be a part of 
@@ -107,43 +107,45 @@ function Alumni(){
             <Alumni_mem 
               img={alumni_img5}
               name="Pradeep Kumar Modi"
-              position="Summer Intern at GARC Chennai"
+              role="Working at BEL"
               year="2021"
-              email="pradeepkumar.171me152@nitk.edu.in"
-              message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-               it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               ulpa qui officia deserunt mollit anim id est laborum."
-               lin="https://www.linkedin.com/in/pradeep-kumar-modi-74ab25190/" />
+              email="pradeepkumarmodi1998@gmail.com"
+              message="SAE-NITK had always been very close to me. Working here is more like a family than 
+              just a club, it's full of enthusiastic people's where you not only learn about all the coolest
+              stuffs related to automobiles rather than discover more.
+              Being the Technical Head of the Club it was always fun working with the team with their 
+              innovative ideas and reasearch towards the projects. It's a place where the Events, Projects, 
+              KEP's, Seminars, Regular and fun meets and interaction with the faculty advisor, seniors and 
+              juniors will improve you in every aspects that is required."
+               lin="https://www.linkedin.com/in/pradeep-kumar-modi-74ab25190" />
             <Alumni_mem 
               img={alumni_img6}
               name="Devendra Gharat"
-              position=""
+              role=""
               year="2021"
-              email=""
-              message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-               it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               ulpa qui officia deserunt mollit anim id est laborum."
-               lin="https://www.linkedin.com/in/devendra-gharat/" />
+              email="devendra88094@gmail.com"
+              message="SAE was one of the important part in my NITKian life. Working under hardworking and 
+              self motivated seniors along with  enthusiastic juniors it never felt like work but enjoyment.
+              Everything starting from freshers, KEP's  to project evaluation, it was a really nice journey.
+              Club can provide you the best platform to interact with same minded people effectively and 
+              SAE was that for me.
+              No doubt that we left club in responsible hands and I am sure they will take club to whole new
+              level. All The Best!"
+               lin="https://www.linkedin.com/in/devendra-gharat" />
             <Alumni_mem 
               img={alumni_img7}
-              name="Shripad Prakash Kelapure"
-              position=""
+              name="Shripad Kelapure"
+              role=""
               year="2021"
-              email="shripad.171me170@nitk.edu.in"
-              message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-               it esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-               ulpa qui officia deserunt mollit anim id est laborum."
-               lin="https://www.linkedin.com/in/shripad-k/" />
+              email="shripadkelapure@gmail.com"
+              message="Happy that I had a good opportunity in working with motivated seniors and juniors. I
+              hope that the future batches in NITK continue with good projects and work in taking the club
+              to new heights."
+               lin="https://www.linkedin.com/in/shripad-k" />
             <Alumni_mem 
               img={alumni_img8}
               name="Ninad Lamture"
-              position=""
+              role="Persuing M.Tech at IIT Madras"
               year="2021"
               email="ninadlamture27@gmail.com"
               message="Club is doing great work in terms of project, seminars, KEP and more. The current 

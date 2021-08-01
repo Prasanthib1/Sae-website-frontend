@@ -22,13 +22,6 @@ const SidebarNav = styled.nav`
   z-index: 10;
 `;
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
-
 const Sidebar = () => {
     const [sidebar, setSidebar] = useState(false);
   
@@ -37,7 +30,7 @@ const Sidebar = () => {
     return (
         <>      
             <div className="nav">
-              <div><Link to="/" onClick={scrollToTop}>
+              <div><Link to="/" onClick={hideSidebar}>
                 <video className="header-video"
                    autostart 
                    autoPlay 
@@ -54,11 +47,11 @@ const Sidebar = () => {
             </div>
             <SidebarNav sidebar={sidebar}>
               <div className="sidebar-wrap">
-                <Link to='#' className="nav-close-icon" onClick={scrollToTop}>
-                  <AiIcons.AiOutlineClose onClick={hideSidebar} color="white"/>
+                <Link to='#' className="nav-close-icon" onClick={hideSidebar}>
+                  <AiIcons.AiOutlineClose color="white"/>
                 </Link>
                 {SidebarData.map((item, index) => {
-                  return <SubMenu item={item} key={index}/>;
+                  return <SubMenu item={item} key={index} state={hideSidebar}/>;
                 })}
               </div>
               <div className="iconsSideNav">
@@ -73,7 +66,10 @@ const Sidebar = () => {
                </div>
                <div className="icon_sidenav_outer">
                 <Fa.FaYoutube className="icon_sidenav" onClick={()=> window.open("https://www.youtube.com/channel/UCPiCkG64oF7KKec7tEhquyw", "_blank")}/>
-               </div>    
+               </div>  
+               <div className="icon_sidenav_outer">
+                 <Fa.FaWordpressSimple className="icon_sidenav" onClick={()=> window.open("https://saenitk.wordpress.com/", "_blank")}/>
+                </div>  
              </div>
             </SidebarNav>
             

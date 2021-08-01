@@ -1,5 +1,5 @@
 import React from "react";
-import {EventTemplate} from './event_1';
+import EventTemplate from './event_page';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './event_page.css';
 
@@ -7,7 +7,7 @@ import autocad from '../../images/Events/autocad.png';
 import mind_fiz from '../../images/Events/mind-fiz.jpg';
 import keynote from '../../images/Events/keynote.jpg';
 import kasting from '../../images/Events/kasting.jpg';
-import otto from '../../images/Events/otto-quiz.jpg';
+import otto from '../../images/Events/otto-quiz.png';
 import mat_sim from '../../images/Events/matlab-simulink.jpg';
 import career from '../../images/Events/Career-building.jpg';
 
@@ -19,10 +19,10 @@ function Event1_20(){
          img={autocad}
          desc="The workshop aimed at covering the basics of 2D and 3D design and modeling of automobile components using the AutoCAD software. It was a hands-on session where the attendees had to follow the instructions given by the speaker, Mr. Sachin Kuchekar, third-year Mechanical Engineering, and implement them on their own system. The event spanned for around 2 hours, starting with the basics of the software such as 2D design using different tools followed by the 3D modeling of a crankshaft.
          "
-         date=" "
+         date="August 7, 2019"
          platform="In-person on the campus"
          speakers="Mr. Sachin Kuchekar"
-         type="Everyone from NITK" />
+         type="External" />
     </div>
     )
 }
@@ -34,9 +34,9 @@ function Event2_20(){
          title="The Mind Fiz"
          img={mind_fiz}
          desc="It was a 24-hour online event, the problem statement for which was circulated to the registered Participation and they were required to submit their CAD files having the full assembly of a CV Axle. It was conducted after the AutoCAD Workshop conducted by SAE-NITK to help the attendees practice the knowledge gained in the workshop."
-         date="-"
+         date="September 28, 2019"
          platform="In-person on the campus"
-         spekaers=""
+         speakers="SAE NITK"
          type="External" />
     </div>
     )
@@ -49,9 +49,9 @@ function Event3_20(){
          title="Kasting"
          img={kasting}
          desc="SAE-NITK in collaboration with MetaMorph, Metallurgy Committee as part of our technical fest, Engineer’19, conducted a presentation on the crankshaft part of automobiles, in addition to the process of building a sand mold and the explanation of various tools used for it. Furthermore, the presentation was followed by a demonstration of the casting process of the crankshaft using Aluminium metal. The event was an hour-long including the presentation and the casting demo."
-         date="-"
+         date="October 18, 2019"
          platform="In-person on the campus"
-         speakers="-"
+         speakers="SAE NITK"
          type="External" />
     </div>
     )
@@ -91,7 +91,7 @@ function Event5_20(){
         quiz had only one round, consisting of non-factual questions asked in a jovial manner so as to make
         a recreational ambiance for the new admissions. The quiz spanned out for an hour. The candidates
         gave their best, however, only one was felicitated."
-         date="-"
+         date="October 29, 2019"
          platform="In-person on the campus"
          speakers="Mr. Anish Dua and Mr. Diwakar Goud"
          type="External" />
@@ -118,7 +118,7 @@ function Event6_20(){
         answers from the audience. The closing ceremony consisted of a few words from our faculty advisor 
         Prof. Poornesh Kumar and Mr. Shaurya Seth, followed by a group photo.
          "
-         date="-"
+         date="January 28-30, 2020"
          platform="In-person on the campus"
          speakers=" Mr. Prakash Verma, Mr. Sreeram S., and Ms. Devayani Kulkarni, Mr. Devaraj Tuppad, Mr. Neelakandan Chandrasekaran"
          type="External " />
@@ -140,10 +140,10 @@ function Event7_20(){
         of assisting club members to build a rough draft of their CVs on LaTex. Finally, the KEP concluded by 
         Mr. Dhruv addressing the crowd and sharing his past experiences on the points mentioned above for
         better clarity on things and process intricacies involved."
-         date="-"
+         date="March 12, 2020"
          platform="In-person on the campus"
          speakers="Mr. Rahul Madhograhia and Mr. Dhruv Thakkar"
-         type="Internal " />
+         type="External " />
     </div>
     )
 }

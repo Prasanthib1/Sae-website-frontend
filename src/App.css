@@ -1,11 +1,5 @@
-.router{
-  background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
-
-/*.app{
-   border-top: 40px solid rgb(194, 194, 194);
-}*/
-
-/*.app{background-color: rgb(233, 233, 233)
-  ;
-}*/

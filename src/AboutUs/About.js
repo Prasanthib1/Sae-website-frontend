@@ -31,6 +31,8 @@ function About() {
                   Prof. Umamaheshwar Rao<br />
                   Director <br />
                   NITK Surathkal
+                  <br/><br/>
+                  January 2020
               </div>
              </div>
              <div className="quote-2"  data-aos="fade-in" data-aos-once="true">I am very much pleased to say that the SAE-NITK club is one of the
@@ -47,6 +49,8 @@ function About() {
                   Prof. Jagannatha Nayak<br />
                   Dean Students' Welfare <br />
                   NITK Surathkal
+                  <br/><br/>
+                  January 2020
               </div>
              </div>            
             </div>

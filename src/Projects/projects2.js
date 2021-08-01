@@ -2,12 +2,12 @@ import React, {useEffect} from "react";
 import './Project.css';
 import DescriptionIcon from '@material-ui/icons/Description';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-import imgp21 from '../images/project2-1.jpeg';
-import imgp22 from '../images/project2-2.jpeg';
-import imgp23 from '../images/project2-3.jpeg';
-import imgp24 from '../images/project2-4.jpeg';
-import imgp25 from '../images/project2-5.jpeg';
-import imgp26 from '../images/project2-6.jpeg';
+import imgp21 from '../images/projects/project2-1.jpeg';
+import imgp22 from '../images/projects/project2-2.jpeg';
+import imgp23 from '../images/projects/project2-3.jpeg';
+import imgp24 from '../images/projects/project2-4.jpeg';
+import imgp25 from '../images/projects/project2-5.jpeg';
+import imgp26 from '../images/projects/project2-6.jpeg';
 import AOS from 'aos';
 
 

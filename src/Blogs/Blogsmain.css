@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
-
 /*Blogs CSS*/
 .blogs {
+  font-family: 'Montserrat', sans-serif;
   background-color:#ecf9fe;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 50px 0px auto 0px;
@@ -13,7 +9,7 @@
   align-items: center;
   width: 300px;
 }
-.blogs_img {padding: 0%; /*object-fit: contain;*/}
+.blogs_img {padding: 0%;}
 .blogs_desc {
   display: grid;
   grid-template-columns: 100%;
@@ -23,25 +19,27 @@
   margin-bottom: 30px;
 }
 .hover-desc-blogs{
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
-.title_date>h3{
-  font-family: 'Catamaran', sans-serif;
+.title_date > h3{
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  letter-spacing: 0.15rem;
   height: 55px;
   color: #0b2f4e;
 }
 .blogs_desc>p{
   display: none;
+  font-family: 'Montserrat', sans-serif;
+  
   height: 5px;
   font-size:13px;
   padding-top: 15px;
 }
 .title_date>p{
+  font-family: 'Montserrat', sans-serif;
   color: rgb(110, 107, 107);
   font-size: medium;
 }
@@ -180,33 +178,35 @@
     padding-left: 0px;
     margin:20px 5% 20px 8%;
     background-color: white;
-  }
-  .heading_blog {
+}
+.heading_blog {
     font-size: 60px;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
     text-align: center;
     padding: 30px;
     margin-top: -5px;
     color: #204095;
-  }
+}
 
-  @media only screen and (max-width: 1087px){
-    .blog_info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      width: 100%;
-      margin:20px 0px 0 20px;
-    }
-  } 
+@media only screen and (max-width: 1087px){
+   .blog_info {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     width: 100%;
+     margin:20px 0px 0 20px;
+   }
+} 
 
-  @media only screen and (max-width: 992px){
-    .blog_info {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      width: 95%;
+@media only screen and (max-width: 992px){
+   .blog_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
     }
-    .blogs{
-      margin: 20px auto;
+   .blogs{
+    margin: 20px auto;
     }
   } 
   @media only screen and (max-width: 708px){

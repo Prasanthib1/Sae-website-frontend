@@ -44,7 +44,7 @@
   padding: 3px 30px 0px 24px;
 }
 
-.header-text{
+.header-text,.header-text-dd{
   font-size: 13px;
   font: 12px/1.5 'Open Sans', arial, sans-serif;
   letter-spacing: 0.15em;
@@ -72,10 +72,12 @@ li {
   overflow: visible;
 }
 .link-i{
+  font-family: 'Montserrat',sans-serif;
   color: white;
   text-decoration: none;
   display: block;
   text-align: left;
+  padding-top: 10px;
 }
 
 .li5, .li4 {
@@ -90,7 +92,7 @@ li {
   text-decoration: none;
   position: relative;
 }
-.link-i:hover {background-color: #3c6080;}
+.link-i:hover {background-color: #4581b6;}
 
 .li5:hover .project-dd,
 .li4:hover .club-dd {
@@ -128,7 +130,16 @@ li {
   margin: 10px 3px;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:768px){
+  .header{
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width:710px){
+  .header{
+    margin-bottom: 0%;
+  }
   .header-top, .h-navbar{
     display: none;
   }

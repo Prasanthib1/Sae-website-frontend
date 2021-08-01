@@ -1,16 +1,14 @@
 .socials{
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 100%;
 }
 .head {
   margin-top: 70px;
   font-size: 21px;
   text-align: center;
 }
-
 .head h1{
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
   font-size: 35px;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -18,18 +16,7 @@
 .youtube {
   align-items: center;
 }
-.vid {
-  position: relative;
-  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
-  margin-bottom: -20%;
-}
-.react-player {
-  height:100px;
-  position: absolute;
-  top:0;
-  left:20%;
-  bottom: 0;
-}
+
 .hp_you{
   font-size: 45px;
 }
@@ -37,7 +24,22 @@
   cursor:pointer
 }
 
-.fb-page{
+.video-responsive {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-bottom: -20%;
+}
+
+.video-responsive iframe {
+  left: 20%;
+  top: 0;
+  height: 60%;
+  width: 60%;
+  position: absolute;
+}
+
+/*.fb-page{
   margin: 30px 0 0 0;
 }
 
@@ -49,4 +51,4 @@
   .fb-page{
     margin: 20px auto;
   }
-}
+}*/

@@ -4,38 +4,37 @@ import './Club.css';
 import * as AiIcons from 'react-icons/ai';
 import * as Hi from 'react-icons/hi';
 
-import img from '../images/profile.jpg';
-import img1c from '../images/K-Eshwar.jpg';
-import img2c from '../images/Ankit-Gupta.jpg';
-import img3c from '../images/Rishu.jpeg';
-import img4c from '../images/Kaustubh-S.jpg';
-import img5c from '../images/Diwakar-S-G.jpg';
-import img6c from '../images/Vishlavath-T.jpg';
-
-import img8c from '../images/Sagar.jpg';
-import img9c from '../images/N-Rahul.jpg';
-import img10c from '../images/Islavath-M.jpg';
-import img11c from '../images/GauthamKrishna.jpg';
-import img12c from '../images/krishnareddy.jpeg';
-import img13c from '../images/Vedika.jpg';
-import img14c from '../images/Manoj-G-S.jpg';
-import img15c from '../images/Mihir.jpg';
-import img16c from '../images/Akshay-Kumar.jpeg';
-import img17c from '../images/Prasanthi.jpeg';
-import img18c from '../images/shrivatsa.jpg';
-import img19c from '../images/Likhita.jpg';
-import img20c from '../images/Lucky-P-R.jpg';
-import img21c from '../images/Guhan.jpg';
-import img22c from '../images/Aashish.jpeg';
-import img23c from '../images/Shunu.jpg';
-import img24c from '../images/Diksha.jpeg';
-import img25c from '../images/Sumit.jpg';
-import img26c from '../images/Pradeep.jpg';
-import img27c from '../images/Shashiprakash.jpg';
-import img28c from '../images/Kushal.jpg';
-import img29c from '../images/Meet.jpg';
-import img30c from '../images/Saransh.jpg';
-import img31c from '../images/Wilson.jpg';
+import img1c from '../images/club/K-Eshwar.jpg';
+import img2c from '../images/club/Ankit-Gupta.jpg';
+import img3c from '../images/club/Rishu.jpeg';
+import img4c from '../images/club/Kaustubh-S.jpg';
+import img5c from '../images/club/Diwakar-S-G.jpg';
+import img6c from '../images/club/Vishlavath-T.jpg';
+import img7c from '../images/club/Sakshi.jpeg';
+import img8c from '../images/club/Sagar.jpg';
+import img9c from '../images/club/N-Rahul.jpg';
+import img10c from '../images/club/Islavath-M.jpg';
+import img11c from '../images/club/GauthamKrishna.jpg';
+import img12c from '../images/club/krishnareddy.jpeg';
+import img13c from '../images/club/Vedika.jpg';
+import img14c from '../images/club/Manoj-G-S.jpg';
+import img15c from '../images/club/Mihir.jpg';
+import img16c from '../images/club/Akshay-Kumar.jpeg';
+import img17c from '../images/club/Prasanthi.jpeg';
+import img18c from '../images/club/shrivatsa.jpg';
+import img19c from '../images/club/Likhita.jpg';
+import img20c from '../images/club/Lucky-P-R.jpg';
+import img21c from '../images/club/Guhan.jpg';
+import img22c from '../images/club/Aashish.jpeg';
+import img23c from '../images/club/Shunu.jpg';
+import img24c from '../images/club/Diksha.jpeg';
+import img25c from '../images/club/Sumit.jpg';
+import img26c from '../images/club/Pradeep.jpg';
+import img27c from '../images/club/Shashiprakash.jpg';
+import img28c from '../images/club/Kushal.jpg';
+import img29c from '../images/club/Meet.jpg';
+import img30c from '../images/club/Saransh.jpg';
+import img31c from '../images/club/Wilson.jpg';
 import AOS from 'aos';
 
 
@@ -68,7 +67,7 @@ export default function Club() {
     return (
         <div className="club">
             <div className="club_head" data-aos="fade-in" data-aos-once="true">
-                <h1>Members</h1>
+                <h1>Our Team</h1>
             </div>
             <div className="club_members">
               <div className="cm_row1">
@@ -92,7 +91,7 @@ export default function Club() {
                 lin="https://www.linkedin.com/in/rishu-kumar-3b93a7170/"/>
                 <ClubMember 
                 src={img4c}
-                name="Kaustubh Sonawane"
+                name="Kaustubh Prashant Sonawane"
                 role="Technical Head"
                 mail="kaustubhsonawane.181me236@nitk.edu.in"
                 lin="https://www.linkedin.com/in/kaustubh-sonawane-80a326192"/>
@@ -111,7 +110,7 @@ export default function Club() {
                 mail="tarunnaik.181me186@nitk.edu.in"
                 lin="https://www.linkedin.com/in/vishlavath-tarun-088477193"/>
                 <ClubMember 
-                src={img}
+                src={img7c}
                 name="Sakshi Bagde"
                 role="Senior Executive member"
                 mail="sakshi.181me172@nitk.edu.in"

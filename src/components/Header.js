@@ -2,7 +2,7 @@ import React, {useEffect,useRef} from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
-import Sidebar from '../Extra/Sidebar';
+import Sidebar from './Sidebar';
 import AOS from 'aos';
 
 import * as FaIcons from 'react-icons/fa';
@@ -63,29 +63,32 @@ export default function Header() {
                   <div className="icon_hp_outer">
                     <FaIcons.FaInstagram className="icon_hp" onClick={()=> window.open("https://www.instagram.com/sae_nitk/?hl=en", "_blank")}/>
                   </div>
+                  <div className="icon_hp_outer">
+                    <FaIcons.FaWordpressSimple className="icon_hp" onClick={()=> window.open("https://saenitk.wordpress.com/", "_blank")}/>
+                  </div>
                  </div>
             </div>
             <ul className={navbarClasses.join(" ")}>              
               <li className="li6">
-                <Link className="page6" to="/event" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
+                <Link className="page6" to="/events" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                   <h3 className="header-text">EVENTS</h3>
                 </Link>
               </li>
 
               <li className="li5">
                 <Link to="#" className="page5" style={{ textDecoration: 'none' }}>
-                   <h3 className="header-text">PROJECTS ▼</h3></Link>
+                   <h3 className="header-text-dd">PROJECTS ▼</h3></Link>
                    <div class="project-dd">
-                    <Link className="link-i" to="/project1" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
+                    <Link className="link-i" to="/project-expo-2019-2020" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                       <p className="link-item">2019-2020</p></Link>
-                    <Link className="link-i" to="/project2" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
+                    <Link className="link-i" to="/project-expo-2020-2021" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                        <p className="link-item">2020-2021</p></Link>
                    </div>
                </li>
 
               <li className="li4">
                 <Link to ="#" className="page4" style={{ textDecoration: 'none' }}>
-                  <h3 className="header-text">MEMBERS ▼</h3></Link>
+                  <h3 className="header-text-dd">MEMBERS ▼</h3></Link>
                   <div class="club-dd">
                     <Link className="link-i" to="/club" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                       <p className="link-item">Current Team</p></Link>
@@ -97,7 +100,7 @@ export default function Header() {
                 <Link className="page3" to="/blog" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                  <h3 className="header-text">BLOGS</h3>
                 </Link></li>
-              <li className="li2"><Link to="/about" className="page2" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
+              <li className="li2"><Link to="/about-us" className="page2" style={{ textDecoration: 'none' }} onClick={scrollToTop}>
                  <h3 className="header-text" >ABOUT US</h3>
                 </Link></li>
               <li className="li1"><Link to="/" className="page1" style={{ textDecoration: 'none' }} onClick={scrollToTop}>

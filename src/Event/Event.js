@@ -1,9 +1,9 @@
 import React,{ Component, useEffect} from "react";
 import {Router, Switch, Link, BrowserRouter} from "react-router-dom";
 import './Event.css';
-import {event_20} from './event_20';
-import {event_21} from './event_21';
-import {event_upcoming} from './event_upcoming';
+import {events_20} from './events_20';
+import {events_21} from './events_21';
+import {events_upcoming} from './events_upcoming';
 import AOS from 'aos';
 
 const scrollToTop = () => {
@@ -89,7 +89,7 @@ class EventMain extends React.Component{
       return(
         <div className="events">
           <div className="up-events">
-            {event_upcoming.map(item => (
+            {events_upcoming.map(item => (
             <Item {... item} /> ))};
            </div>
           <div className="pre-events-heading" data-aos="fade-in" data-aos-once="true"> 
@@ -98,13 +98,13 @@ class EventMain extends React.Component{
            2020-2021
          </p>
          <div className="previous-events"> 
-           {event_21.map(item => (<Item {... item} />))};
+           {events_21.map(item => (<Item {... item} />))};
           </div>
          <p className="event-year" data-aos="fade-in" data-aos-once="true">
            2019-2020
          </p>
          <div className="previous-events">
-         {event_20.map(item => (<Item {... item} /> ))};
+         {events_20.map(item => (<Item {... item} /> ))};
           </div> 
         </div>)
 
@@ -112,7 +112,7 @@ class EventMain extends React.Component{
         <div >
           <div className="events">
           <div className="up-events">
-            {event_upcoming.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))}; 
+            {events_upcoming.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))}; 
            </div>
           <div className="pre-events-heading" data-aos="fade-in" data-aos-once="true"> 
             <h3>Archives</h3> 
@@ -121,13 +121,13 @@ class EventMain extends React.Component{
            2020-2021
          </p>
          <div className="previous-events"> 
-           {event_21.filter(items => items.type === this.state.value).map(item => (<Item {... item} />))}; 
+           {events_21.filter(items => items.type === this.state.value).map(item => (<Item {... item} />))}; 
           </div>
          <p className="event-year" data-aos="fade-in" data-aos-once="true">
            2019-2020
          </p>
          <div className="previous-events">
-         {event_20.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))};
+         {events_20.filter(items => items.type === this.state.value).map(item => (<Item {... item} /> ))};
           </div> 
         </div>
         </div>)          
@@ -143,7 +143,7 @@ class EventMain extends React.Component{
                 <select id="type" onChange={this.handleChange} value={this.state.value} class="event-dropdown">
                     <option value="none" className="event-type">None</option>
                     <option value="internal" className="event-type">Internal</option>
-                    <option value="external" className="event-type">Extrnal</option>
+                    <option value="external" className="event-type">External</option>
                 </select>
               </div>
               <div>  

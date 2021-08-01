@@ -31,7 +31,7 @@
     padding-top: 20px;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:710px){
   .nav{
     display: flex;
     flex-direction: row;
@@ -59,6 +59,9 @@
 .SidebarLabel {
   margin-left: 16px;
 }
+.SidebarLabel2{
+  margin-left: 0;
+}
 
 .dropdown-link{
   background-color: #4e6092;
@@ -70,17 +73,16 @@
   color: #f5f5f5;
   font-size: 18px;
 }
-
-/*Icons*/
 .dropdown-link:hover{
   background: white;
   cursor: pointer;
   color: #203e91;
   border-left: 5px solid #92393b;
 }
-
+/*Icons*/
 .iconsSideNav{
   display: inline-flex;
+  flex-wrap: wrap;
   margin: 20px 0 0 12px;
 }
 

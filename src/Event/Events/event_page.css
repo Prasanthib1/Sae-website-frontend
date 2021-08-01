@@ -1,5 +1,5 @@
 .ep-title{
-   font-weight: 800;
+   font-weight: 600;
    color: #204095;
    font-size: 45px;
 }
@@ -50,8 +50,7 @@
     margin: 0 auto;
 }
 
-.ep-info-h{
-    
+.ep-info-h{ 
     position: relative;
     color: white;
     background-color: #90191b;
@@ -63,7 +62,14 @@
     letter-spacing: 0.25rem;
     z-index: 1;
 }
+.ep-info-h b{
+    font-weight: 400;
+}
 
+.speaker{
+    font-size: 12px;
+    letter-spacing: 0.15rem;
+}
 
 .ep-info-i{
     position: relative;

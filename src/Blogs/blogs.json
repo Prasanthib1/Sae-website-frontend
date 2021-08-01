@@ -1,10 +1,19 @@
 [
     {
+        "image":"https://saenitk.files.wordpress.com/2021/03/xl_white_back_b_optim.jpg",
+        "title":"The Wireless Earbuds",
+        "desc":"Wireless earphones have been a norm in the world of earphones. Once considered a luxury product, they have become available to the masses for as low as Rs300. It is fascinating to see how a device so small can produce such high-quality audio whilst having a good battery life🔋.Join us in our new blog post as we explore Wireless Earbuds🎧",
+        "link":"https://saenitk.wordpress.com/2021/07/20/the-wireless-earbuds/",
+        "date":"July 21, 2021",
+        "author":"Islavath Manohar"
+
+    },
+    {
         "image":"https://saenitk.files.wordpress.com/2021/03/avs-at-night-cropped-1.jpg",
         "title":"Autonomous Vehicles",
         "desc":"Tesla’s AutoPilot Amazed everyone when it launched. The fact that you could travel without having to drive your car was a breakthrough feature in the industry. Though it came with its flaws as the cars would frequently crash. Even after years of development, these flaws have reduced but still exist. Autonomous Vehicles might feel like the norm in the future but at this moment they come with their set of risks.",
         "link":"https://saenitk.wordpress.com/2021/02/01/dual-axis-steering/",
-        "date":"March 22, 2021",
+        "date":"March 24, 2021",
         "author":"Saransh Bhaduka"
 
     },
@@ -13,7 +22,7 @@
         "title":"Dual Axis Steering",
         "desc":"F1 cars have become so technologically advanced that to win it you need a state of the art technology . This is what Mercedes brought in with the Dual Axis Steering which helped them secure the win. But will this tech help them retaining the title, only time can tell.",
         "link":"https://saenitk.wordpress.com/2021/02/01/dual-axis-steering/",
-        "date":"February 1, 2021",
+        "date":"March 2, 2021",
         "author":"Kaustubh Prashant Sonawane"
     },
 
@@ -22,7 +31,7 @@
         "title":"Noise Cancelling Headphones",
         "desc":"Headphones help us in hearing various sounds.But what if your headphones could completely block sounds around you. What if I told u this technology already exists. Noise-Cancelling Headphones have the ability to block any surrounding noise while letting the user listen to the input audio. In development since the 1950s Noise-cancelling headphones have turned from a product used exclusively by pilots to a luxury product, to now being available in the commercial market for everyone.",
         "link":"https://saenitk.wordpress.com/2021/01/05/noise-cancelling-headphones/",
-        "date":"January 5, 2021",
+        "date":"January 12, 2021",
         "author":"Lucky Prameeth Rayi"
     },
     {
@@ -30,7 +39,7 @@
         "title":"Drone Display Technology",
         "desc":"In the latest spider-man movie spider-man is tricked by a fake world created by drones. What if I told u this technology already existed. Drone displays have developed immensely over the last decade and have become a popular show during big events. With so much potential and advancements yet to take place Drone display technology might become the new big thing in the entertainment industry",
         "link":"https://saenitk.wordpress.com/2021/01/05/drone-display-technology/",
-        "date":"January 5, 2021",
+        "date":"January 9, 2021",
         "author":"Patrike Vedika Rajkumar"
     },
 
@@ -39,7 +48,7 @@
         "title":"Fractals",
         "desc":"Why does the pattern on a snowflake look the same even when u focus on a particular part of it? What’s the reason for these intricate repeating patterns seen in human lungs and lightning bolts? The answers to all these questions lie in the study of fractals.  Fractals have immensely influenced technology and have been crucial in image processing  and cancer diagnosis.",
         "link":"https://saenitk.wordpress.com/2020/12/27/fractals/",
-        "date":"December 27, 2020",
+        "date":"December 30, 2020",
         "author":"Gauthamkrishna S"
     },
 
@@ -48,7 +57,7 @@
         "title":"Helmet Mounted Display System",
         "desc":"When Tony Stark puts on his Iron Man suit we just can’t help but be startled by all the tech present in his suit. One of the prominent parts being the Helmet Mounted Display  System.Most of us will be surprised to hear that this technology already exists. By just  turning your head they enable you to get a 360-degree view of the world around the  aircraft. Helmet Mounted Display System has been a part of Military Aircrafts since the  early 1960s and has developed as an essential part of the Aircraft.",
         "link":"https://saenitk.wordpress.com/2020/12/27/helmet-mounted-display-system/",
-        "date":"December 27, 2020",
+        "date":"December 30, 2020",
         "author":"Likhita J"
     },
     {
@@ -56,7 +65,7 @@
         "title":"Sustainable Energy – Need of the hour",
         "desc":"The planet, our blue and green orb Earth, is……. unfortunately delicate. We all are consumers, and our lifestyles are depleting the planet’s resources at an alarming rate. Sustainable living is the answer to some of mankind’s problems, but how do we live sustainably? “Are sustainable energy sources and renewable energy sources the same? Where do we draw the line? What can we do with this relatively unexplored form of derived energy? How do we limit our emissions?” It’s time to settle the debate and understand how we can benefit from sustainable energy.",
         "link":"https://saenitk.wordpress.com/2020/12/13/sustainable-energy-need-of-the-hour/",
-        "date":"December 13, 2020", 
+        "date":"December 19, 2020", 
         "author": "Ankit Gupta" 
     },
 
@@ -65,7 +74,7 @@
         "title":"Touch Screen Technology",
         "desc":"When Steve Jobs introduced the first iphone in 2008.The world was mesmerised by how a device so small could understand features like multi-touch. But within less than a decade almost half the world had access to smartphones.Touch screen panels have come a long way,from being used in massive computers in the late 20th century to being on our wrists in smart watches. Touch screens are now a part of almost every electronic device and will probably replace every other touch based interface in the future .",
         "link":"https://saenitk.wordpress.com/2020/12/13/touch-screen-technology-one-touch-open-up-world/",
-        "date":"December 13, 2020",
+        "date":"December 19, 2020",
         "author":"Pradeep Singh Solanki"
     },
     {
@@ -81,7 +90,7 @@
         "title":"Image Processing and its Applications",
         "desc":"A very bold statement considering the human vision is still unmatched when it comes to precisely recognize objects and surely way more precise than any computer made to date. Tho in the past few years, advancements have been remarkable. Nobody is surprised seeing Image processing become an in-demand Technology considering the fact that images are what help us make sense of the world.",
         "link":"https://saenitk.wordpress.com/2020/10/16/image-processing-and-its-applications/",
-        "date":"October 16, 2020",
+        "date":"October 17, 2020",
         "author":"Diksha Negi"
     },
     {
@@ -105,7 +114,7 @@
         "title":"PROTEUS",
         "desc":"Imagine a material that you do not want to be susceptible to cutting under any circumstances.  That could be security doors, bike locks, protective equipment like body Armor or, heck, even shoe  soles. These are just a handful of the applications that Proteus can be used. Indeed the world’s first ‘uncuttable material’. Join us in our latest blog , as we look to unravel its mysteries.",
         "link":"https://saenitk.wordpress.com/2020/08/03/proteus/",
-        "date":"August 3, 2020",
+        "date":"August 4, 2020",
         "author":"Ninad Lamture"
     },
     {
@@ -113,7 +122,7 @@
         "title":"ISOCELL Camera Sensors",
         "desc":"A sensor is vital. The soul of a digital camera is in its sensor—to determine image  size, resolution, low-light performance, depth of field, dynamic range, lenses, and even  the camera’s physical size.  Samsung’s tetracell technology enables light-sensitive 2.4μm pixels for ultimate low-light  photography. This article aims to demystify this vision technology and learn how Samsung  commands 20% of the global image market by bringing images to life in imaginative new ways.",
         "link":"https://saenitk.wordpress.com/2020/07/25/isocell-camera-sensors/",
-        "date":"August 3, 2020",
+        "date":"July 25, 2020",
         "author":"KES Srinivas"
     },
     {
@@ -146,7 +155,7 @@
         "title":"NASA’s Dragonfly Mission",
         "desc":"NASA’s “Dragonfly Mission,” will explore the unique and organic-rich world-Titan.  The vehicle will launch in 2026, reaching Titan by 2034. It will explore Titan’s dense  atmosphere flying multiple times over several locations, searching for water-based or  hydrocarbon-based life. Read about NASA’s plan in collaboration with John Hopkin’s  University, to implement practical solutions and overcome technological barriers. Their efforts surely would open a new chapter in the area of space exploration!",
         "link":"https://saenitk.wordpress.com/2020/06/25/nasadragonfly/",
-        "date":"June 25, 2020",
+        "date":"June 27, 2020",
         "author":"Vishlavath Tarun"
     },
 
@@ -164,7 +173,7 @@
         "title":"The Fourth Arm of Defence",
         "desc":"OFB used to be the world’s largest government-operated production organisation  with more than 80K workforce at that time. The Oldest organisation run by the Government of India before being Corporatised. The 37th Largest Defence Equipment Manufacturer and much more.  Join us, as we explain about how OFB is serving as the backbone of Indian defence forces.",
         "link":"https://saenitk.wordpress.com/2020/06/05/the-fourth-arm-of-defence/",
-        "date":"June 5, 2020",
+        "date":"June 6, 2020",
         "author":"N Rahul"
     },
     {
@@ -189,7 +198,7 @@
         "title":"Role of Technology in the battle against COVID-19",
         "desc":"Ever wondered about how our country aims to eradicate the Coronavirus? Join us, as we explain in detail as to how DRDO is working at the lowest levels of the health infrastructure to add steam to our front-lines.",
         "link":"https://saenitk.wordpress.com/2020/05/15/role-of-technology-in-the-battle-against-covid19/",
-        "date":"May 22, 2020",
+        "date":"May 15, 2020",
         "author":"Diwakar S Goud"
     }
 ]

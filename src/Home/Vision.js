@@ -13,10 +13,14 @@ export default function Vision() {
 
     return (
         <div className="vision_news">
-          <marquee className="scroll-text" behavior="scroll" direction="left" scrollamount="10">
+          <div className="scroll">
+          <div><h2>News Feed</h2></div>
+           <marquee className="scroll-text" behavior="scroll" direction="left" scrollamount="10">
             <span><Link to="/project2" style={{ textDecoration: 'none' }}><p>&#10031; Project Expo 2020-2021 &nbsp;</p></Link></span>
-            <Link to="/event10_21" style={{ textDecoration: 'none' }}><p>  &nbsp; &#10031; Magazine Release &nbsp;</p></Link>
-          </marquee>
+            <Link to="/event/magazine-release" style={{ textDecoration: 'none' }}><p>  &nbsp; &#10031; Magazine Release &nbsp;</p></Link>
+           </marquee>
+          </div>
+          
          <div className="vision">
             <h1 className="vision_head" data-aos="fade-in">Our Vision</h1>
             <div className="vision_text" data-aos="fade-in">

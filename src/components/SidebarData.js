@@ -13,7 +13,7 @@ export const SidebarData = [
   },
   {
     title: 'About Us',
-    path: '/about',
+    path: '/about-us',
     icon: <IoIcons.IoIosPaper />,
     subnavbool: false
   },
@@ -24,7 +24,7 @@ export const SidebarData = [
     subnavbool: false
   },
   {
-    title: 'Members',
+    title2: 'Members',
     path: '#',
     icon: <IoIcons.IoMdPeople />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -46,7 +46,7 @@ export const SidebarData = [
     ]
   },
   {
-    title: 'PROJECTS',
+    title2: 'Projects',
     path: '#',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -56,13 +56,13 @@ export const SidebarData = [
     subNav: [
       {
         title: '2019-2020',
-        path: '/project1',
+        path: '/project-expo-2019-2020',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: '2020-2021',
-        path: '/project2',
+        path: '/project-expo-2020-2021',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       }
@@ -71,7 +71,7 @@ export const SidebarData = [
   
   {
     title: 'Events',
-    path: '/event',
+    path: '/events',
     icon: <IoIcons.IoIosPaper />,
     subnavbool: false
   },

@@ -1,8 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './event_page.css';
+import EventTemplate from './event_page';
 
-import gate_webinar from './gate-webinar.png'
+import gate_webinar from '../../images/Events/gate-webinar.jpg';
 import rspant from '../../images/Events/webinar-rspant.jpg';
 import matlab from '../../images/Events/matlab.jpeg';
 import simulink from '../../images/Events/simulink.jpeg';
@@ -10,36 +10,7 @@ import solidworks from '../../images/Events/solidworks.png';
 import adobe from '../../images/Events/adobe.jpg';
 import cosmol from '../../images/Events/cosmol.png';
 import magazine from '../../images/Events/magazine2.jpeg';
-
-const EventTemplate=({title, img ,desc, date, speakers, platform, type}) => {
-    return(
-        <div className="event_page my-5">
-            <h1 className="ep-title text-center col-12 my-5">{title}</h1>
-            <img className="ep-img text-center center-block mx-auto" src={img}/>
-            <div className="ep-about text-center">About the event</div>
-            <div className="ep-desc text-center">{desc}</div>
-            <div className="ep-info">
-             <div className="ep-info-pt my-5">
-                 <div className="ep-info-h"><b>DATE</b></div>
-                 <div className="ep-info-i">{date}</div>
-              </div>
-              <div className="ep-info-pt my-5">
-                 <div className="ep-info-h"><b>SPEAKER(S)</b></div>
-                 <div className="ep-info-i">{speakers}</div>
-              </div>
-              <div className="ep-info-pt my-5">
-                 <div className="ep-info-h"><b>PLATFORM</b></div>
-                 <div className="ep-info-i">{platform}</div>
-              </div>
-              <div className="ep-info-pt my-5">
-                 <div className="ep-info-h"><b>TYPE</b></div>
-                 <div className="ep-info-i">{type}</div>
-              </div>
-            </div>
-        </div>
-    )
-
-}
+import website from '../../images/Events/website.png';
 
 function Event1_21(){
     return(
@@ -54,7 +25,7 @@ function Event1_21(){
          date="May 31, 2020"
          speakers="Dr. Rajkumar S Pant"
          platform="Zoom"
-         type=" " />
+         type="External" />
     </div>
     )
 } 
@@ -89,7 +60,7 @@ function Event3_21(){
          The second phase dealt with certain advanced features and functionalities. PID controller and various tuning methods were discussed. The participants were introduced to various features of transfer functions of first and second order. Visualisation of graphs and optimization were also included in the KEP. 
          The event was open to the members of the club.         
          "
-         date="&emsp; December 18, 2020 (Phase 1) &emsp; 
+         date="&emsp; December 18, 2020 (Phase 1) &emsp; &emsp;
          &emsp;  January 17, 2021 (Phase 2)"
          speakers="Rishu Kumar, Ankit Gupta"
          platform="MS Teams"
@@ -156,7 +127,7 @@ function Event7_21(){
     <div>
         <EventTemplate 
          title="Internship Webinar"
-         img="http://localhost:3000/static/media/pre-2.9805bb0d.jpg"
+         img=" "
          desc="The webinar was conducted in two phases.
          The first phase mainly dealt with internship opportunities in the fields of research and management. Rajat Shukla spoke about the various types of fellowships, their application processes, the perks associated, etc., with a special focus on internships in the core domain. He also spoke about his own internship experience. 
          Rishu Kumar and Ankit Gupta dealt with the topic of cold mailing. They shared detailed information about the content to include, making the right choice of professors and projects, and the general dos and don’ts in cold mailing. 
@@ -217,7 +188,7 @@ function Event10_21(){
     <div>
         <EventTemplate 
          title="Website release"
-         img="http://localhost:3000/static/media/pre-2.9805bb0d.jpg"
+         img={website}
          desc="The revamp of the club website started in October 2020. A new website has been developed with the aim of making it more interactive for the users and simplifying the various procedures involved in the club. It has been built using React JS as compared to the current website that was built using WordPress. It is a responsive website that has various front end and back end features for presenting valuable club information such as projects, blogs, members, etc., to the outside world. 
          A lot of dedicated effort from the web development team has gone into the development of this new website. Presently, it is under final stages of development and testing. The release is expected soon.                                            
          "

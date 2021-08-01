@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
 import './Project.css';
-import img10 from '../images/p.jpg';
 
-import imgp11 from '../images/project1-1.jpeg';
-import imgp12 from '../images/project1-2.jpeg';
-import imgp13 from '../images/project1-3.jpeg';
-import imgp14 from '../images/project1-4.jpeg';
+import imgp11 from '../images/projects/project1-1.jpeg';
+import imgp12 from '../images/projects/project1-2.jpeg';
+import imgp13 from '../images/projects/project1-3.jpeg';
+import imgp14 from '../images/projects/project1-4.jpeg';
 import AOS from 'aos';
 
 const Project_info1=({image,desc,name})=>{

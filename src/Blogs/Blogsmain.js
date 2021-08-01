@@ -70,7 +70,7 @@ function App2(){
     <div className="blogmain">
       <h1 className="heading_blog">Blogs</h1>
       <SearchBar
-        placeholder="Search by author/date..."
+        placeholder="Search by title/author/date..."
         onChange={(e) => searchData(e.target.value)}
        />
       <div className="blog_info">
